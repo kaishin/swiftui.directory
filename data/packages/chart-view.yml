@@ -1,0 +1,14 @@
+name: ChartView
+description: |
+  A package for displaying bar and pie charts as a view.
+url: https://github.com/AppPear/ChartView
+license: MIT
+preview: 
+category: Chart
+tags:
+  - SPM
+  - iOS
+author:
+  name: Andras Samu
+  website: https://github.com/AppPear
+  avatar: https://avatars1.githubusercontent.com/u/2826764

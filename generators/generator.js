@@ -58,7 +58,12 @@ module.exports = (plop) => {
     ],
     actions: (data) => {
       if (data.tags) {
-        data.tags = `\ntags:\n  - ${data.tags.split(',').trim().join('\n  - ')}`;
+        data.tags = `\ntags:\n  - ${data.tags
+          .split(',')
+          .map(function(e) {
+            return e.trim();
+          })
+          .join('\n  - ')}`;
       }
 
       return [
