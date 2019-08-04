@@ -1,22 +1,52 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "swiftui-directory",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "A SwiftUI package directory.",
+  "version": "1.0.0",
+  "author": "Reda Lemeden <hello@redalemeden.com>",
   "dependencies": {
+    "autoprefixer": "^9.6.0",
+    "browserslist": "^4.6.3",
+    "feed": "^3.0.0",
     "gatsby": "^2.9.4",
+    "gatsby-cli": "^2.7.0",
     "gatsby-image": "^2.1.4",
+    "gatsby-plugin-canonical-urls": "^2.1.0",
+    "gatsby-plugin-catch-links": "^2.1.0",
+    "gatsby-plugin-fathom": "^1.0.4",
     "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-netlify": "^2.1.0",
     "gatsby-plugin-offline": "^2.1.3",
+    "gatsby-plugin-postcss": "^2.1.0",
     "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-robots-txt": "^1.4.0",
     "gatsby-plugin-sharp": "^2.1.5",
+    "gatsby-plugin-sitemap": "^2.1.0",
+    "gatsby-plugin-svgr": "^2.0.0",
+    "gatsby-remark-abbr": "^1.0.0",
+    "gatsby-remark-autolink-headers": "^2.1.0",
+    "gatsby-remark-copy-linked-files": "^2.1.0",
+    "gatsby-remark-embedder": "^1.1.2",
+    "gatsby-remark-prismjs": "^3.3.0",
+    "gatsby-remark-smartypants": "^2.1.0",
     "gatsby-source-filesystem": "^2.0.39",
+    "gatsby-transformer-remark": "^2.5.0",
     "gatsby-transformer-sharp": "^2.1.21",
+    "gatsby-transformer-yaml": "^2.2.4",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "pify": "^4.0.1",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^12.0.1",
+    "postcss-normalize": "^8.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "prismjs": "^1.16.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "typeface-rubik": "^0.0.72"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
@@ -27,17 +57,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "dev": "gatsby develop",
+    "start": "npm run dev"
   }
 }
