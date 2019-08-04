@@ -49,15 +49,15 @@
     "typeface-rubik": "^0.0.72"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "plop": "^2.4.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [ "gatsby" ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "generate": "plop --plopfile ./generators/plopfile.js"
   }
 }

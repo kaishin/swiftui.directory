@@ -1,0 +1,11 @@
+name: {{name}}
+description: |
+  {{description}}
+url: {{url}}
+license: {{license}}
+preview: 
+category: {{category}}{{tags}}
+author:
+  name: {{authorName}}
+  website: {{authorWebsite}}
+  avatar: {{authorAvatar}}
