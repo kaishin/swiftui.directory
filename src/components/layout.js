@@ -2,6 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import '../css/normalize.css';
+import '../css/styles.css';
+
+import 'typeface-rubik';
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

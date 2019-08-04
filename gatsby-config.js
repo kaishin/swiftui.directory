@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-transformer-yaml',
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

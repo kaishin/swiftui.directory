@@ -1,0 +1,104 @@
+@import "_glob";
+
+.main-page {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: system-ui;
+}
+
+a {
+  color: orange;
+}
+
+main {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+}
+
+.main-logo {
+  max-width: 6rem;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.page-description {
+  opacity: 0.8;
+  margin-top: 0.5em;
+  margin-bottom: 6em;
+  text-align: center;
+}
+
+.package-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  & .package {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    margin-bottom: 2%;
+    border-radius: 1rem;
+    text-align: center;
+    flex: 0 1 30%;
+
+    & a {
+      color: lightblue;
+    }
+
+    & .writing {
+      font-size: 2rem;
+      margin: 0.5em 0;
+    }
+
+    & .definition {
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    & .game-list {
+      padding: 0;
+      list-style: none;
+    }
+
+    & .game {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 0.6rem;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.7);
+      display: flex;
+      align-items: center;
+    }
+
+    & .game-cover {
+      max-width: 30px;
+      border-radius: 4px;
+      vertical-align: middle;
+      margin-right: 1em;
+    }
+
+    & .game-metadata {
+      display: inline-block;
+      text-align: left;
+    }
+
+    & .date {
+      opacity: 0.5;
+      font-size: 0.9em;
+    }
+  }
+}
