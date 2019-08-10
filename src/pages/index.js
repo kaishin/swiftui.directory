@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Search from '../components/search';
 import { graphql } from 'gatsby';
 
 const IndexPage = ({ data }) => (
@@ -8,13 +9,15 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <h1>SwiftUI Directory</h1>
 
-    <ol className="package-list">
+    <Search />
+
+    {/* <ol className="package-list">
       {data.allPackages.edges.map(({ node }, id) => (
         <li className="package">
           {node.name} <small>{node.description}</small>
         </li>
       ))}
-    </ol>
+    </ol> */}
   </Layout>
 );
 
