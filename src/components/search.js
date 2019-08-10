@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 class Search extends Component {
   state = {
@@ -23,9 +23,17 @@ class Search extends Component {
     };
 
     return (
-      <div>
-        <input className="search-input" type="text" onChange={this.search} placeholder={'Search'} />
-        <span>Results for '{this.state.query}'</span>
+      <div className="search-box">
+        <form>
+          <input
+            className="search-input"
+            type="text"
+            value={this.state.query}
+            onChange={this.search}
+            placeholder={'Search'}
+          />
+          <span>Results for '{this.state.query}'</span>
+        </form>
         <ul className="package-list">
           <ResultList />
         </ul>
@@ -41,15 +49,11 @@ class Search extends Component {
       return [];
     } else {
       var results = [];
-      // search the indexed fields
       Object.keys(index).forEach((idx) => {
-        results.push(...index[idx].values.search(query)); // more search options at https://github.com/nextapps-de/flexsearch#index.search
+        results.push(...index[idx].values.search(query));
       });
 
-      // find the unique ids of the nodes
       results = Array.from(new Set(results));
-
-      // return the corresponding nodes in the store
       var nodes = store.filter((node) => (results.includes(node.id) ? node : null)).map((node) => node.node);
 
       return nodes;

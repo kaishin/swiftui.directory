@@ -1,7 +1,14 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
 
-// You can delete this file if you're not using it
+  if (node.internal.type === `PackagesYaml`) {
+    const searchIndex =
+      node.description + ' ' + node.tags.join() + ' ' + node.category + ' ' + node.license + ' ' + node.author.name;
+
+    createNodeField({
+      node,
+      name: 'searchIndex',
+      value: searchIndex
+    });
+  }
+};

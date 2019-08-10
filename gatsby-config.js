@@ -30,12 +30,6 @@ module.exports = {
         type: 'PackagesYaml',
         fields: [
           {
-            name: 'id',
-            resolver: 'id',
-            indexed: false,
-            store: true
-          },
-          {
             name: 'name',
             resolver: 'name',
             indexed: true,
@@ -47,8 +41,8 @@ module.exports = {
             }
           },
           {
-            name: 'description',
-            resolver: 'description',
+            name: 'searchIndex',
+            resolver: 'fields.searchIndex',
             indexed: true,
             store: true,
             attributes: {
@@ -56,61 +50,42 @@ module.exports = {
               tokenize: 'forward',
               resolution: 9
             }
+          },
+          {
+            name: 'description',
+            resolver: 'description',
+            indexed: false,
+            store: true
           },
           {
             name: 'category',
             resolver: 'category',
-            indexed: true,
-            store: true,
-            attributes: {
-              encode: 'icase',
-              tokenize: 'forward',
-              resolution: 9
-            }
+            indexed: false,
+            store: true
           },
           {
             name: 'license',
             resolver: 'license',
-            indexed: true,
-            store: true,
-            attributes: {
-              encode: 'icase',
-              tokenize: 'forward',
-              resolution: 9
-            }
+            indexed: false,
+            store: true
           },
           {
             name: 'tags',
             resolver: 'tags',
-            indexed: true,
-            store: true,
-            attributes: {
-              encode: 'icase',
-              tokenize: 'forward',
-              resolution: 9
-            }
+            indexed: false,
+            store: true
           },
           {
             name: 'url',
             resolver: 'url',
-            indexed: true,
-            store: true,
-            attributes: {
-              encode: 'icase',
-              tokenize: 'forward',
-              resolution: 9
-            }
+            indexed: false,
+            store: true
           },
           {
             name: 'authorName',
             resolver: 'author.name',
-            indexed: true,
-            store: true,
-            attributes: {
-              encode: 'icase',
-              tokenize: 'forward',
-              resolution: 9
-            }
+            indexed: false,
+            store: true
           },
           {
             name: 'authorAvatar',
