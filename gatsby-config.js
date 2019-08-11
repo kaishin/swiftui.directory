@@ -2,7 +2,11 @@ module.exports = {
   siteMetadata: {
     title: 'SwiftUI Directory',
     description: 'A curated directory of SwiftUI open-source packages.',
-    author: 'Reda Lemeden'
+    author: 'Reda Lemeden',
+    email: 'hello@redalemeden.com',
+    keywords: [ 'swiftui', 'packages', 'libraries', 'frameworks', 'spm' ],
+    siteUrl: 'https://swiftui.directory',
+    authorBio: 'Designer, programmer, and illustrator based in Stockholm, Sweden.'
   },
   plugins: [
     'gatsby-transformer-yaml',
