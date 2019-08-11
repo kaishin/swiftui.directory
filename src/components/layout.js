@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql, Link } from 'gatsby';
 
+import Seo from './seo';
+
 import '../css/normalize.css';
 import '../css/styles.css';
 
@@ -56,7 +58,7 @@ const Layout = ({ children }) => (
             </li>
           </ul>
           <span className="copyright">
-            <em>&copy;</em> {new Date().getFullYear()} {author}.
+            <em>&copy;</em> {new Date().getFullYear()} {data.site.siteMetadata.author}.
             <br />All Rights Reserved. <a href="https://github.com/kaishin/redalemeden.com">Source</a>
           </span>
         </footer>

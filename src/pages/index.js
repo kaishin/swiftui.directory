@@ -7,7 +7,6 @@ import { graphql } from 'gatsby';
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>SwiftUI Directory</h1>
 
     <Search />
 
