@@ -46,6 +46,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-highlight-words": "^0.16.0",
     "typeface-rubik": "^0.0.72"
   },
   "devDependencies": {
@@ -54,7 +55,9 @@
     "@svgr/webpack": "^4.3.0",
     "typescript": "^3.5.2"
   },
-  "keywords": [ "gatsby" ],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

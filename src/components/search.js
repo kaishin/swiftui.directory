@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'gatsby';
+import Highlighter from 'react-highlight-words';
 
 class Search extends Component {
   state = {
@@ -12,7 +13,8 @@ class Search extends Component {
       if (this.state.results.length > 0) {
         return this.state.results.map((item, i) => (
           <li className="package" key={i}>
-            {item.name} <small>{item.description}</small>
+            <Highlighter textToHighlight={item.name} searchWords={this.state.query.split()} />
+            <small>{item.description}</small>
           </li>
         ));
       } else if (this.state.query.length >= 2) {

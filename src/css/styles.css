@@ -1,8 +1,6 @@
 @import "_glob";
 
-.main-page {
-  background-color: var(--primary-color);
-  color: white;
+body {
   font-family: system-ui;
 }
 
