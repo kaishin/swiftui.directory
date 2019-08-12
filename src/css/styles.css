@@ -1,52 +1,63 @@
+:root {
+  --primary-color: #0042b0;
+  --full-width: 60rem;
+}
+
+@custom-media --larger-than-max-width (width >= 60rem);
+@custom-media --smaller-than-max-width (width < 60rem);
+@custom-media --compact-layout (width < 40rem);
+@custom-media --full-layout (width >= 40rem);
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  padding: 0;
-  margin: 0;
   background: none;
-}
-
-:root {
-  --primary-color: #0042b0;
-}
-
-body {
   font-family: "Quattro";
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: orange;
 }
 
-main {
-  max-width: 65rem;
+.main-container {
+  max-width: var(--full-width);
   margin: 0 auto;
+  padding: 2rem;
+
+  @media (--larger-than-max-width) {
+    padding: 0;
+  }
 }
 
-.logo {
-  text-align: center;
+.site-header {
+  & a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  & .header-link {
+    & span {
+      display: block;
+      font-weight: normal;
+    }
+  }
 }
 
-.main-logo {
-  max-width: 6rem;
-  margin: 0 auto;
-}
+.header-body {
+  @media (--full-layout) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.page-title {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: normal;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.page-description {
-  opacity: 0.8;
-  margin-top: 0.5em;
-  margin-bottom: 6em;
-  text-align: center;
+    & * {
+      flex: 0 0 48%;
+    }
+  }
 }
 
 .package-list {

@@ -8,15 +8,15 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
 
-    <Search />
+    <h2 className="section-title">Recently Added</h2>
 
-    {/* <ol className="package-list">
+    <ol className="package-list">
       {data.allPackages.edges.map(({ node }, id) => (
-        <li className="package">
+        <li className="package" key={id}>
           {node.name} <small>{node.description}</small>
         </li>
       ))}
-    </ol> */}
+    </ol>
   </Layout>
 );
 
