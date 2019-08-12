@@ -23,6 +23,7 @@
     "gatsby-plugin-sharp": "^2.2.11",
     "gatsby-plugin-sitemap": "^2.2.6",
     "gatsby-plugin-svgr": "^2.0.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-abbr": "^1.0.0",
     "gatsby-remark-autolink-headers": "^2.1.0",
     "gatsby-remark-copy-linked-files": "^2.1.5",

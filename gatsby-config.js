@@ -9,6 +9,15 @@ module.exports = {
     authorBio: 'Designer, programmer, and illustrator based in Stockholm, Sweden.'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: [ 'Quattro:n4,i4,n7,i7' ],
+          urls: [ '/fonts/fonts.css' ]
+        }
+      }
+    },
     'gatsby-transformer-yaml',
     'gatsby-plugin-postcss',
     {

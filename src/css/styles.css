@@ -1,7 +1,19 @@
-@import "_glob";
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: system-ui;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+:root {
+  --primary-color: #0042b0;
+}
+
+body {
+  font-family: "Quattro";
 }
 
 a {
