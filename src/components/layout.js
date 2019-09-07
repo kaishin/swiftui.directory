@@ -28,20 +28,13 @@ const Layout = ({ children }) => (
     `}
     render={(data) => (
       <section className="main-container">
-        <Seo />
+        <Seo title="Home" />
         <header className="site-header">
           <Link to="/" activeClassName="header-link">
             <h1>
               SwiftUI <span>Directory</span>
             </h1>
           </Link>
-          <div className="header-body">
-            <p className="intro">
-              loreLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum
-              mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.
-            </p>
-            <input type="text" name="search" id="search" />
-          </div>
         </header>
 
         <main className="page-content">{children}</main>
