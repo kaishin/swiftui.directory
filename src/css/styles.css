@@ -1,19 +1,13 @@
-:root {
-  --primary-color: #0042b0;
-  --full-width: 60rem;
-}
-
-@custom-media --larger-than-max-width (width >= 60rem);
-@custom-media --smaller-than-max-width (width < 60rem);
-@custom-media --compact-layout (width < 40rem);
-@custom-media --full-layout (width >= 40rem);
+@import "_variables";
+@import "_packages";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: none;
+  background: var(--body-background);
+  color: var(--body-color);
   font-family: "Quattro";
   margin: 0;
   padding: 0;
@@ -24,9 +18,13 @@ a {
 }
 
 .main-container {
-  max-width: var(--full-width);
+  display: grid;
   margin: 0 auto;
+  max-width: var(--full-width);
+  min-height: 100vh;
   padding: 2rem;
+
+  grid-template-rows: auto 1fr auto;
 
   @media (--larger-than-max-width) {
     padding: 0;
@@ -34,21 +32,49 @@ a {
 }
 
 .site-header {
+  @extend %side-pattern;
+
+  &::before {
+    opacity: 0.5;
+  }
+
   & a {
     font-size: 1.4rem;
     text-decoration: none;
-    color: black;
+    color: var(--link-color);
   }
 
   & .header-link {
+    line-height: 1;
+
+    & h1 {
+      margin: 0;
+      padding: 3.5rem 0 1.5rem 0;
+    }
+
     & span {
       display: block;
       font-weight: normal;
+      font-size: 2.2rem;
     }
   }
 }
 
+.page-content {
+  @extend %side-pattern;
+
+  &::before {
+    opacity: 0.1;
+  }
+}
+
 .header-body {
+  @extend %side-pattern;
+
+  &::before {
+    opacity: 0.2;
+  }
+
   @media (--full-layout) {
     display: flex;
     justify-content: space-between;
@@ -60,70 +86,14 @@ a {
   }
 }
 
-.package-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  & .package {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 1rem;
-    margin-bottom: 2%;
-    border-radius: 1rem;
-    text-align: center;
-    flex: 0 1 30%;
-
-    & a {
-      color: lightblue;
-    }
-
-    & .writing {
-      font-size: 2rem;
-      margin: 0.5em 0;
-    }
-
-    & .definition {
-      font-size: 0.9rem;
-      margin-bottom: 2rem;
-    }
-
-    & .game-list {
-      padding: 0;
-      list-style: none;
-    }
-
-    & .game {
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 0.6rem;
-      padding: 0.5rem;
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.7);
-      display: flex;
-      align-items: center;
-    }
-
-    & .game-cover {
-      max-width: 30px;
-      border-radius: 4px;
-      vertical-align: middle;
-      margin-right: 1em;
-    }
-
-    & .game-metadata {
-      display: inline-block;
-      text-align: left;
-    }
-
-    & .date {
-      opacity: 0.5;
-      font-size: 0.9em;
-    }
-  }
-}
-
 .hidden {
   display: none;
+}
+
+.site-footer {
+  @extend %side-pattern;
+
+  &::before {
+    opacity: 0.05;
+  }
 }

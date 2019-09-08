@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #0042b0;
+  --body-background: white;
+  --body-color: #13212d;
+  --link-color: #222;
+  --side-pattern-background: #99abd7;
+  --card-background-color: color-mod(var(--link-color) alpha(10%));
+
+  --full-width: 60rem;
+  --side-pattern-offset: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #0042b0;
+    --body-background: #13212d;
+    --body-color: white;
+    --link-color: #dee2e6;
+    --card-background-color: color-mod(var(--link-color) alpha(80%));
+    --side-pattern-background: #507a9d;
+  }
+}
+
+@custom-media --larger-than-max-width (width >= 60rem);
+@custom-media --smaller-than-max-width (width < 60rem);
+@custom-media --compact-layout (width < 40rem);
+@custom-media --full-layout (width >= 40rem);
+
+%side-pattern {
+  position: relative;
+
+  &::before {
+    --width: 18px;
+    content: '';
+    height: 100%;
+    width: var(--width);
+    background: var(--side-pattern-background);
+    display: block;
+    position: absolute;
+    left: calc(-1 * var(--width) - var(--side-pattern-offset));
+  }
+}
