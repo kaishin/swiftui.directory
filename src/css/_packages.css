@@ -1,63 +1,63 @@
+%icon {
+  background-image: url(/icons/grid-icon.svg);
+  display: block;
+  height: 2rem;
+  margin: 1rem auto 0 auto;
+  width: 2rem;
+}
+
 .package-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 
-  & .package {
-    background: var(--card-background-color);
-    padding: 1rem;
+  & .card {
+    --icon-container-width: 3.75rem;
+    background-image: linear-gradient(180deg, white, #fbfcff);
+    border-radius: 0.9rem;
+    border: 1px solid rgba(116, 165, 255, 0.15);
+    box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex: 0 1 32%;
     margin-bottom: 2%;
-    border-radius: 1rem;
+    margin-right: 2%;
+    overflow: hidden;
     text-align: center;
-    flex: 0 1 30%;
+    height: 10rem;
 
-    & a {
-      color: lightblue;
+    &:nth-child(3) {
+      margin-right: 0;
     }
 
-    & .writing {
-      font-size: 2rem;
-      margin: 0.5em 0;
+    @media (--dark-mode) {
+      background: #04090d;
+      border-image: none;
     }
 
-    & .definition {
-      font-size: 0.9rem;
-      margin-bottom: 2rem;
+    & .title {
+      margin: 0;
     }
 
-    & .game-list {
-      padding: 0;
-      list-style: none;
-    }
-
-    & .game {
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 0.6rem;
-      padding: 0.5rem;
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.7);
-      display: flex;
-      align-items: center;
-    }
-
-    & .game-cover {
-      max-width: 30px;
-      border-radius: 4px;
-      vertical-align: middle;
-      margin-right: 1em;
-    }
-
-    & .game-metadata {
-      display: inline-block;
+    & .content {
+      padding: 1rem;
       text-align: left;
     }
 
-    & .date {
-      opacity: 0.5;
-      font-size: 0.9em;
+    & .icon-container {
+      background-color: red;
+      flex: 0 0 var(--icon-container-width);
+      text-align: center;
+
+      & .icon {
+        @extend %icon;
+      }
+
+      & .icon-pattern {
+        @extend %icon;
+        opacity: 0.5;
+      }
     }
   }
 }

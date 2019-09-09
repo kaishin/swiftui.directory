@@ -25,6 +25,7 @@
 @custom-media --smaller-than-max-width (width < 60rem);
 @custom-media --compact-layout (width < 40rem);
 @custom-media --full-layout (width >= 40rem);
+@custom-media --dark-mode (prefers-color-scheme: dark);
 
 %side-pattern {
   position: relative;

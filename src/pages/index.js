@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Card from '../components/card';
 import { graphql } from 'gatsby';
-import Highlighter from 'react-highlight-words';
 
 class IndexPage extends Component {
   state = {
@@ -15,12 +15,7 @@ class IndexPage extends Component {
 
     const ResultList = () => {
       if (this.state.results.length > 0) {
-        return this.state.results.map((item, i) => (
-          <li className="package" key={i}>
-            <Highlighter textToHighlight={item.name} searchWords={this.state.query.split()} />
-            <small>{item.description}</small>
-          </li>
-        ));
+        return this.state.results.map((item, i) => <Card index={i} item={item} query={this.state.query} />);
       } else if (this.state.query.length > 2) {
         return "No results for '" + this.state.query + "'";
       } else {
@@ -57,14 +52,7 @@ class IndexPage extends Component {
 
         <section className={'browse-container ' + (this.state.query.length > 0 ? 'hidden' : '')}>
           <h2 className="section-title">Recently Added</h2>
-
-          <ol className="package-list">
-            {packages.map(({ node }, id) => (
-              <li className="package" key={id}>
-                {node.name} <small>{node.description}</small>
-              </li>
-            ))}
-          </ol>
+          <ol className="package-list">{packages.map(({ node }, id) => <Card index={id} item={node} query="" />)}</ol>
         </section>
       </Layout>
     );
