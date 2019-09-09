@@ -95,8 +95,17 @@ export const query = graphql`
     allPackages: allPackagesYaml {
       edges {
         node {
-          name
+          tags
+          author {
+            avatar
+            name
+            website
+          }
+          category
           description
+          license
+          name
+          url
         }
       }
     }

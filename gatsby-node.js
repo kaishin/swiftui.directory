@@ -3,7 +3,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `PackagesYaml`) {
     const searchIndex =
-      node.description + ' ' + node.tags.join() + ' ' + node.category + ' ' + node.license + ' ' + node.author.name;
+      node.description + ' ' + node.tags.join(', ') + ' ' + node.category + ' ' + node.license + ' ' + node.author.name;
 
     createNodeField({
       node,

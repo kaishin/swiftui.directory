@@ -2,6 +2,7 @@
   --primary-color: #0042b0;
   --body-background: white;
   --body-color: #13212d;
+  --card-color: #5374b1;
   --link-color: #222;
   --side-pattern-background: #99abd7;
   --card-background-color: color-mod(var(--link-color) alpha(10%));
@@ -15,6 +16,7 @@
     --primary-color: #0042b0;
     --body-background: #13212d;
     --body-color: white;
+    --card-color: #a4bfef;
     --link-color: #dee2e6;
     --card-background-color: color-mod(var(--link-color) alpha(80%));
     --side-pattern-background: #507a9d;
