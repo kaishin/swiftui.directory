@@ -14,3 +14,4 @@ Select a type from below:
 - Graph
 - Image
 - Graphics
+- Misc

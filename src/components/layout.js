@@ -35,6 +35,9 @@ const Layout = ({ children }) => (
               SwiftUI <span>Directory</span>
             </h1>
           </Link>
+          <p className="intro">
+            A curated collection of open-source SwiftUI packages.To suggest a package, open an issue.
+          </p>
         </header>
 
         <main className="page-content">{children}</main>

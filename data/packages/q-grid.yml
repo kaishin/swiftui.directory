@@ -1,6 +1,6 @@
 name: QGrid
 description: |
-   The missing SwiftUI collection view. It uses the same approach as SwiftUI's List view, by computing its cells on demand from an underlying collection of identified data.
+   A collection view implemented in SwiftUI. Supports configurable column count, spacing, and padding.
 url: https://github.com/Q-Mobile/QGrid
 license: MIT
 preview: 

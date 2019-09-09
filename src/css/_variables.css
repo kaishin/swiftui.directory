@@ -6,9 +6,11 @@
   --link-color: #222;
   --side-pattern-background: #99abd7;
   --card-background-color: color-mod(var(--link-color) alpha(10%));
+  --search-field-background: color-mod(var(--card-color) alpha(8%));
 
   --full-width: 60rem;
   --side-pattern-offset: 24px;
+  --search-field-foreground: var(--body-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +22,7 @@
     --link-color: #dee2e6;
     --card-background-color: color-mod(var(--link-color) alpha(80%));
     --side-pattern-background: #507a9d;
+    --search-field-background: rgba(0, 0, 0, 0.4);
   }
 }
 

@@ -1,6 +1,6 @@
 name: ChartView
 description: |
-  A package for displaying bar and pie charts as a view.
+  An animated bar and pie chart view. Supports customizable colors.
 url: https://github.com/AppPear/ChartView
 license: MIT
 preview: 

@@ -28,10 +28,6 @@ class IndexPage extends Component {
         <SEO title="Home" />
 
         <div className="header-body">
-          <p className="intro">
-            loreLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.
-            Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.
-          </p>
           <input
             name="search"
             id="search"
