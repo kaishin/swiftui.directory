@@ -12,7 +12,7 @@ class Card extends React.Component {
 
     return (
       <li className="card" key={index}>
-        <div className="icon-container">
+        <div className={'icon-container ' + item.category.toLowerCase()}>
           <span className="icon" />
           <span className="icon-pattern" />
           <span className="icon-pattern" />

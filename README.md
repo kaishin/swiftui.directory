@@ -8,10 +8,11 @@ To suggest a new package, fork the repo and create a Yaml file in the data direc
 
 Select a type from below:
 
-- Layout
+- Animation
+- Chart
 - Color
 - Control
-- Graph
-- Image
 - Graphics
-- Misc
+- Image
+- Layout
+- Navigation

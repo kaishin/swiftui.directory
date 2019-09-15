@@ -65,7 +65,7 @@ a {
     line-height: 1.5;
     color: var(--card-color);
     font-size: 0.9rem;
-    max-width: 400px;
+    max-width: 26rem;
     margin-left: 2rem;
   }
 }
@@ -95,6 +95,26 @@ a {
     outline: none;
     padding: 1rem;
     width: 100%;
+  }
+}
+
+.title-container {
+  align-items: baseline;
+  display: flex;
+  margin-bottom: 1rem;
+
+  & .section-title {
+    text-transform: uppercase;
+    font-size: 0.96rem;
+    letter-spacing: 0.1em;
+  }
+
+  & .line {
+    background-color: var(--search-field-background);
+    flex-grow: 1;
+    height: 5px;
+    opacity: 0.6;
+    margin-left: 1rem;
   }
 }
 

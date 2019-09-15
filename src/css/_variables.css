@@ -8,8 +8,8 @@
   --card-background-color: color-mod(var(--link-color) alpha(10%));
   --search-field-background: color-mod(var(--card-color) alpha(8%));
 
-  --full-width: 60rem;
-  --side-pattern-offset: 24px;
+  --full-width: 70rem;
+  --side-pattern-offset: 36px;
   --search-field-foreground: var(--body-color);
 }
 

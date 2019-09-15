@@ -1,5 +1,5 @@
 %icon {
-  background-image: url(/icons/grid-icon.svg);
+  background-image: url(/icons/control-icon.svg);
   display: block;
   height: 2rem;
   margin: 1rem auto 0 auto;
@@ -49,11 +49,12 @@
 
       & .avatar {
         --size: 22px;
-        height: var(--size);
-        width: var(--size);
+        background-color: black;
         border-radius: calc(var(--size) / 2);
-        vertical-align: middle;
+        height: var(--size);
         margin-right: 0.5rem;
+        vertical-align: middle;
+        width: var(--size);
       }
     }
 
@@ -67,7 +68,6 @@
     }
 
     & .icon-container {
-      background-color: red;
       flex: 0 0 var(--icon-container-width);
       text-align: center;
 
@@ -77,8 +77,85 @@
 
       & .icon-pattern {
         @extend %icon;
-        opacity: 0.3;
+        opacity: 0.35;
+      }
+
+      &.chart {
+        background-color: #ff6126;
+
+        & .icon,
+        & .icon-pattern {
+          background-image: url(/icons/chart-icon.svg);
+        }
+      }
+
+      &.layout {
+        background-color: #0096ff;
+
+        & .icon,
+        & .icon-pattern {
+          background-image: url(/icons/layout-icon.svg);
+        }
+      }
+
+      &.animation {
+        background-color: #0096ff;
+
+        & .icon,
+        & .icon-pattern {
+          background-image: url(/icons/animation-icon.svg);
+        }
+      }
+
+      &.color {
+        background-color: #ff6126;
+
+        & .icon,
+        & .icon-pattern {
+          background-image: url(/icons/color-icon.svg);
+        }
+      }
+
+      &.control {
+        background-color: #0096ff;
+
+        & .icon,
+        & .icon-pattern {
+          background-image: url(/icons/control-icon.svg);
+        }
+      }
+
+      &.graphics {
+        background-color: #0096ff;
+
+        & .icon,
+        & .icon-pattern {
+          background-image: url(/icons/graphics-icon.svg);
+        }
+      }
+
+      &.image {
+        background-color: #0096ff;
+
+        & .icon,
+        & .icon-pattern {
+          background-image: url(/icons/image-icon.svg);
+        }
+      }
+
+      &.navigation {
+        background-color: #0096ff;
+
+        & .icon,
+        & .icon-pattern {
+          background-image: url(/icons/navigation-icon.svg);
+        }
       }
     }
   }
+}
+
+mark {
+  background-color: rgba(255, 184, 15, 0.3);
+  color: var(--body-color);
 }

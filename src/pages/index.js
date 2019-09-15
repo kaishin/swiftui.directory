@@ -47,7 +47,10 @@ class IndexPage extends Component {
         </section>
 
         <section className={'browse-container ' + (this.state.query.length > 0 ? 'hidden' : '')}>
-          <h2 className="section-title">Recently Added</h2>
+          <div className="title-container">
+            <h2 className="section-title">Recently Added</h2>
+            <span className="line" />
+          </div>
           <ol className="package-list">{packages.map(({ node }, id) => <Card index={id} item={node} query="" />)}</ol>
         </section>
       </Layout>
