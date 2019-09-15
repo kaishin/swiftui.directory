@@ -6,8 +6,8 @@
 }
 
 body {
-  background: var(--body-background);
-  color: var(--body-color);
+  background: var(--body-bg-color);
+  color: var(--primary-fg-color);
   font-family: "Quattro";
   margin: 0;
   padding: 0;
@@ -23,7 +23,6 @@ a {
   max-width: var(--full-width);
   min-height: 100vh;
   padding: 2rem;
-
   grid-template-rows: auto 1fr auto;
 
   @media (--larger-than-max-width) {
@@ -51,19 +50,23 @@ a {
     & h1 {
       margin: 0;
       padding: 3.5rem 0 1.5rem 0;
+      letter-spacing: 0.05rem;
     }
 
     & span {
       display: block;
-      font-weight: normal;
-      font-size: 2.2rem;
+      font-weight: 400;
+      font-size: 1.8rem;
+      letter-spacing: 0.14rem;
+      margin-top: 0.2rem;
+      text-transform: uppercase;
     }
   }
 
   & .intro {
     display: inline-block;
     line-height: 1.5;
-    color: var(--card-color);
+    color: var(--secondary-fg-color);
     font-size: 0.9rem;
     max-width: 26rem;
     margin-left: 2rem;
@@ -78,6 +81,10 @@ a {
   }
 }
 
+.content-section {
+  padding-top: 2rem;
+}
+
 .header-body {
   @extend %side-pattern;
 
@@ -86,15 +93,36 @@ a {
   }
 
   & .search-input {
-    background-color: var(--search-field-background);
+    letter-spacing: 0.05em;
+    background-color: var(--search-field-bg-color);
     border-radius: 0.5rem;
     border: none;
-    color: var(--search-field-foreground);
+    color: var(--search-field-fg-color);
     font-size: 1rem;
     margin: 1rem 0;
     outline: none;
     padding: 1rem;
     width: 100%;
+
+    &::placeholder {
+      color: color-mod(var(--secondary-fg-color) alpha(90%));
+    }
+  }
+
+  & .hint {
+    color: var(--secondary-fg-color);
+    font-size: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    margin-left: 0.5rem;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+
+    &.hidden {
+      display: block;
+      opacity: 0;
+    }
   }
 }
 
@@ -110,7 +138,7 @@ a {
   }
 
   & .line {
-    background-color: var(--search-field-background);
+    background-color: var(--search-field-bg-color);
     flex-grow: 1;
     height: 5px;
     opacity: 0.6;

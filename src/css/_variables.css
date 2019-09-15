@@ -1,28 +1,26 @@
 :root {
-  --primary-color: #0042b0;
-  --body-background: white;
-  --body-color: #13212d;
-  --card-color: #5374b1;
+  --body-bg-color: white;
+  --primary-fg-color: #13212d;
+  --secondary-fg-color: #5374b1;
   --link-color: #222;
-  --side-pattern-background: #99abd7;
-  --card-background-color: color-mod(var(--link-color) alpha(10%));
-  --search-field-background: color-mod(var(--card-color) alpha(8%));
+  --side-pattern-bg-color: #99abd7;
+  --card-bg-color: color-mod(var(--link-color) alpha(10%));
+  --search-field-bg-color: color-mod(var(--secondary-fg-color) alpha(8%));
 
   --full-width: 70rem;
   --side-pattern-offset: 36px;
-  --search-field-foreground: var(--body-color);
+  --search-field-fg-color: var(--primary-fg-color);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color: #0042b0;
-    --body-background: #13212d;
-    --body-color: white;
-    --card-color: #a4bfef;
+    --body-bg-color: #13212d;
+    --primary-fg-color: white;
+    --secondary-fg-color: #a4bfef;
     --link-color: #dee2e6;
-    --card-background-color: color-mod(var(--link-color) alpha(80%));
-    --side-pattern-background: #507a9d;
-    --search-field-background: rgba(0, 0, 0, 0.4);
+    --card-bg-color: color-mod(var(--link-color) alpha(80%));
+    --side-pattern-bg-color: #507a9d;
+    --search-field-bg-color: rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -40,7 +38,7 @@
     content: '';
     height: 100%;
     width: var(--width);
-    background: var(--side-pattern-background);
+    background: var(--side-pattern-bg-color);
     display: block;
     position: absolute;
     left: calc(-1 * var(--width) - var(--side-pattern-offset));

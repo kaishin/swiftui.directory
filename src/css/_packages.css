@@ -19,13 +19,24 @@
     border-radius: 0.9rem;
     border: 1px solid rgba(116, 165, 255, 0.15);
     box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.05);
-    display: flex;
     flex: 0 1 32%;
+    height: 12rem;
     margin-bottom: 2%;
     margin-right: 2%;
+    mask-image: radial-gradient(white, black);
     overflow: hidden;
     text-align: center;
-    height: 12rem;
+    transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    & .card-link {
+      display: flex;
+      text-decoration: none;
+      color: var(--primary-fg-color);
+    }
 
     &:nth-child(3) {
       margin-right: 0;
@@ -64,7 +75,7 @@
     }
 
     & .description {
-      color: var(--card-color);
+      color: var(--secondary-fg-color);
     }
 
     & .icon-container {
@@ -157,5 +168,5 @@
 
 mark {
   background-color: rgba(255, 184, 15, 0.3);
-  color: var(--body-color);
+  color: var(--primary-fg-color);
 }

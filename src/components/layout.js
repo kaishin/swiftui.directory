@@ -36,7 +36,7 @@ const Layout = ({ children }) => (
             </h1>
           </Link>
           <p className="intro">
-            A curated collection of open-source SwiftUI packages. Open an issue to suggest a new package.
+            A curated collection of open-source SwiftUI components. Open an issue to suggest a new component.
           </p>
         </header>
 

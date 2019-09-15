@@ -17,9 +17,9 @@ class IndexPage extends Component {
       if (this.state.results.length > 0) {
         return this.state.results.map((item, i) => <Card index={i} item={item} query={this.state.query} />);
       } else if (this.state.query.length > 2) {
-        return "No results for '" + this.state.query + "'";
+        return "Unfortunately, no results were found for '" + this.state.query + "' :(";
       } else {
-        return 'Please insert at least 3 characters';
+        return 'Shrug';
       }
     };
 
@@ -35,24 +35,36 @@ class IndexPage extends Component {
             type="text"
             value={this.state.query}
             onChange={this.search}
-            placeholder={'Search'}
+            placeholder={'Search libraries by name, keyword, author, etc.'}
           />
+          <small className={'hint ' + (this.state.query.length > 0 && this.state.query.length < 3 ? '' : 'hidden')}>
+            {3 -
+              this.state.query.length +
+              ' more character' +
+              (this.state.query.length === 2 ? ' ' : 's ') +
+              'to start searching...'}
+          </small>
         </div>
 
-        <section className={'search-container ' + (this.state.query.length > 0 ? '' : 'hidden')}>
-          <h2 className="section-title">Search Results</h2>
-          <ul className="package-list">
-            <ResultList />
-          </ul>
-        </section>
+        <div className="content-section">
+          <section className={'search-container ' + (this.state.query.length > 2 ? '' : 'hidden')}>
+            <div className="title-container">
+              <h2 className="section-title">Search Results</h2>
+              <span className="line" />
+            </div>
+            <ul className="package-list">
+              <ResultList />
+            </ul>
+          </section>
 
-        <section className={'browse-container ' + (this.state.query.length > 0 ? 'hidden' : '')}>
-          <div className="title-container">
-            <h2 className="section-title">Recently Added</h2>
-            <span className="line" />
-          </div>
-          <ol className="package-list">{packages.map(({ node }, id) => <Card index={id} item={node} query="" />)}</ol>
-        </section>
+          <section className={'browse-container ' + (this.state.query.length > 2 ? 'hidden' : '')}>
+            <div className="title-container">
+              <h2 className="section-title">Recently Added</h2>
+              <span className="line" />
+            </div>
+            <ol className="package-list">{packages.map(({ node }, id) => <Card index={id} item={node} query="" />)}</ol>
+          </section>
+        </div>
       </Layout>
     );
   }
