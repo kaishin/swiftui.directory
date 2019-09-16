@@ -17,7 +17,7 @@ class IndexPage extends Component {
       if (this.state.results.length > 0) {
         return this.state.results.map((item, i) => <Card index={i} item={item} query={this.state.query} />);
       } else if (this.state.query.length > 2) {
-        return "Unfortunately, no results were found for '" + this.state.query + "' :(";
+        return "No results were found for '" + this.state.query + "' :(";
       } else {
         return 'Shrug';
       }
@@ -37,13 +37,7 @@ class IndexPage extends Component {
             onChange={this.search}
             placeholder={'Search libraries by name, keyword, author, etc.'}
           />
-          <small className={'hint ' + (this.state.query.length > 0 && this.state.query.length < 3 ? '' : 'hidden')}>
-            {3 -
-              this.state.query.length +
-              ' more character' +
-              (this.state.query.length === 2 ? ' ' : 's ') +
-              'to start searching...'}
-          </small>
+          <small className={'hint ' + (this.state.query.length > 0 ? '' : 'hidden')}>{this.searchHintText()}</small>
         </div>
 
         <div className="content-section">
@@ -97,6 +91,21 @@ class IndexPage extends Component {
 
       console.log(nodes.length);
       return nodes;
+    }
+  }
+
+  searchHintText() {
+    if (this.state.query.length < 3) {
+      return 'Minimum 3 characters';
+    } else {
+      return (
+        this.state.results.length +
+        ' result' +
+        (this.state.results.length === 1 ? '' : 's') +
+        " for '" +
+        this.state.query +
+        "'"
+      );
     }
   }
 }

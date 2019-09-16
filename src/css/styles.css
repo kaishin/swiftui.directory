@@ -68,7 +68,7 @@ a {
     line-height: 1.5;
     color: var(--secondary-fg-color);
     font-size: 0.9rem;
-    max-width: 26rem;
+    max-width: 28rem;
     margin-left: 2rem;
   }
 }
@@ -117,7 +117,7 @@ a {
     bottom: -0.5rem;
     margin-left: 0.5rem;
     opacity: 0.7;
-    transition: opacity 0.5s;
+    transition: opacity 1s;
 
     &.hidden {
       display: block;

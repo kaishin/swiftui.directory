@@ -30,7 +30,9 @@ class Card extends React.Component {
                 alt={item.authorName || item.author.name}
               />
 
-              <span>By {item.authorName || item.author.name}</span>
+              <span>
+                By <Highlighter textToHighlight={item.authorName || item.author.name} searchWords={query.split()} />
+              </span>
             </h4>
             <small className="description">
               <Highlighter textToHighlight={item.description} searchWords={query.split()} />
