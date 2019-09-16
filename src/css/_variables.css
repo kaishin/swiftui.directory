@@ -24,10 +24,13 @@
   }
 }
 
-@custom-media --larger-than-max-width (width >= 60rem);
-@custom-media --smaller-than-max-width (width < 60rem);
+@custom-media --larger-than-max-width (width >= 70rem);
+@custom-media --smaller-than-max-width (width < 70rem);
 @custom-media --compact-layout (width < 40rem);
 @custom-media --full-layout (width >= 40rem);
+@custom-media --ultra-compact-layout (width < 20rem);
+@custom-media --card-two-column (width < 1000px);
+@custom-media --card-one-column (width < 620px);
 @custom-media --dark-mode (prefers-color-scheme: dark);
 
 %side-pattern {

@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: orange;
+  color: #0096ff;
 }
 
 .main-container {
@@ -22,7 +22,7 @@ a {
   margin: 0 auto;
   max-width: var(--full-width);
   min-height: 100vh;
-  padding: 2rem;
+  padding: 0 2rem;
   grid-template-rows: auto 1fr auto;
 
   @media (--larger-than-max-width) {
@@ -46,11 +46,16 @@ a {
   & .header-link {
     line-height: 1;
     display: inline-block;
+    margin-right: 2rem;
 
     & h1 {
       margin: 0;
-      padding: 3.5rem 0 1.5rem 0;
+      padding: 2rem 0 1.5rem;
       letter-spacing: 0.05rem;
+
+      @media (--full-layout) {
+        padding: 3.5rem 0 1.5rem 0;
+      }
     }
 
     & span {
@@ -64,12 +69,15 @@ a {
   }
 
   & .intro {
-    display: inline-block;
     line-height: 1.5;
     color: var(--secondary-fg-color);
     font-size: 0.9rem;
     max-width: 28rem;
-    margin-left: 2rem;
+    margin-top: 0;
+
+    @media (--full-layout) {
+      display: inline-block;
+    }
   }
 }
 
@@ -152,8 +160,21 @@ a {
 
 .site-footer {
   @extend %side-pattern;
+  color: var(--secondary-fg-color);
 
   &::before {
     opacity: 0.05;
+  }
+
+  & .footer-content {
+    padding: 2rem 0;
+  }
+
+  & .legal {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    max-width: 40rem;
+    opacity: 0.5;
   }
 }
