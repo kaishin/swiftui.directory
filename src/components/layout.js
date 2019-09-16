@@ -43,10 +43,19 @@ const Layout = ({ children }) => (
         <main className="page-content">{children}</main>
 
         <footer className="site-footer">
-          <span className="copyright">
-            <em>&copy;</em> {new Date().getFullYear()} {data.site.siteMetadata.author}.
-            <br />All Rights Reserved. <a href="https://github.com/kaishin/redalemeden.com">Source</a>
-          </span>
+          <div className="footer-content">
+            <span className="copyright">
+              <em>&copy;</em> {new Date().getFullYear()}{' '}
+              <a href="https://redalemeden.com">{data.site.siteMetadata.author}</a> —{' '}
+              <a href="https://github.com/kaishin/redalemeden.com">Source</a>
+            </span>
+            <p className="legal">
+              This website doesn't collect, store, or use any personal information from visitors, including IP
+              addresses, geolocation, and browser fingerprints. <a href="https://usefathom.com">Fathom</a> is used to
+              collect basic, non-identifying data such as visitor count and referrers.<br /> This website is not
+              affiliated with Apple nor the Swift open-source project.
+            </p>
+          </div>
         </footer>
       </section>
     )}
