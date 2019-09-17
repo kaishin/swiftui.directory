@@ -10,6 +10,10 @@ class IndexPage extends Component {
     results: []
   };
 
+  componentDidMount() {
+    this.showSearch();
+  }
+
   render() {
     const { edges: packages } = this.props.data.allPackages;
 
@@ -27,7 +31,7 @@ class IndexPage extends Component {
       <Layout>
         <SEO title="Home" />
 
-        <div className="header-body">
+        <div className="header-body hidden">
           <input
             name="search"
             id="search"
@@ -92,6 +96,10 @@ class IndexPage extends Component {
       console.log(nodes.length);
       return nodes;
     }
+  }
+
+  showSearch() {
+    document.querySelector('.header-body').style.display = 'block';
   }
 
   searchHintText() {
