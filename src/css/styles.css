@@ -8,7 +8,7 @@
 body {
   background: var(--body-bg-color);
   color: var(--primary-fg-color);
-  font-family: "Quattro";
+  font-family: "Quattro", -apple-system, "IBM Plex Sans", "Helvetica", "Arial", sans-serif;
   margin: 0;
   padding: 0;
 }
