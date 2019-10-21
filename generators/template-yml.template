@@ -1,5 +1,5 @@
 name: {{name}}
-description: |
+description: >
   {{description}}
 url: {{url}}
 license: {{license}}

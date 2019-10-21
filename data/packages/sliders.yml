@@ -1,0 +1,21 @@
+name: Grid
+description: >
+  Grid-based layout library with configurable column count, item sizing, and item spacing.
+url: https://github.com/SwiftUIExtensions/Grid
+license: MIT
+preview: 
+category: Layout
+tags:
+  - SPM
+  - Preferences
+  - Flow
+  - Column
+  - Collection
+  - macOS
+  - iOS
+  - watchOS
+  - tvOS
+author:
+  name: SwiftUIExtensions 
+  website: https://github.com/SwiftUIExtensions
+  avatar: https://avatars2.githubusercontent.com/u/56576564 

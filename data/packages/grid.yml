@@ -1,0 +1,20 @@
+name: Sliders
+description: >
+  A library for building custom single-value and range sliders.
+  Features a composable API to change the appearance of the tracks and thumbs.
+url: https://github.com/SwiftUIExtensions/Sliders
+license: MIT
+preview: 
+category: Control
+tags:
+  - SPM
+  - macOS
+  - Catalyst
+  - iOS
+  - watchOS
+  - tvOS
+  - Gradient
+author:
+  name: SwiftUIExtensions 
+  website: https://github.com/SwiftUIExtensions
+  avatar: https://avatars2.githubusercontent.com/u/56576564 
