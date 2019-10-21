@@ -1,6 +1,7 @@
 name: ChartView
-description: |
-  An animated bar and pie chart view. Supports customizable colors.
+description: >
+  A chart view library with support for line, bar, and pie charts.
+  Comes with animation, customizable colors, and interactive data points.
 url: https://github.com/AppPear/ChartView
 license: MIT
 preview: 

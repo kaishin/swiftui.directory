@@ -1,5 +1,5 @@
 name: GridStack
-description: |
+description: >
   A flow-based flexible grid view. Supports minimum
   item width, custom spacing, and different height configurations.
 url: https://github.com/pietropizzi/GridStack

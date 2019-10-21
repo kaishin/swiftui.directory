@@ -1,6 +1,6 @@
 name: QGrid
-description: |
-   A collection view implemented in SwiftUI. Supports configurable column count, spacing, and padding.
+description: >
+   A collection view library with support for configurable column count, spacing, and padding.
 url: https://github.com/Q-Mobile/QGrid
 license: MIT
 preview: 
