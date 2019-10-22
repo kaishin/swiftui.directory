@@ -1,0 +1,17 @@
+name: SwiftUIBlurView
+description: >
+  A library that exposes the system blur styles as a SwiftUI view.
+url: https://github.com/danielsaidi/SwiftUIBlurView
+license: MIT
+preview: 
+category: Graphics
+tags:
+  - iOS
+  - Cocoapods
+  - Carthage
+  - SPM
+  - Dark
+author:
+  name: Daniel Saidi
+  website: http://www.danielsaidi.com/
+  avatar: https://avatars2.githubusercontent.com/u/429927

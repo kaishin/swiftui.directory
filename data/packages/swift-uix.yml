@@ -1,0 +1,25 @@
+name: SwiftUIX
+description: >
+  An extension to the standard SwiftUI library 
+url: https://github.com/SwiftUIX/SwiftUIX
+license: MIT
+preview: 
+category: Extension
+tags:
+  - Port
+  - iOS
+  - macOS
+  - tvOS
+  - watchOS
+  - SPM
+  - UITextView
+  - NSAttributedString
+  - NSToolbar
+  - NSToolbarItem
+  - UIPageViewController
+  - Switch
+  - Progress
+author:
+  name: Vastal Manot
+  website: https://vmanot.com/
+  avatar: https://avatars1.githubusercontent.com/u/5306992

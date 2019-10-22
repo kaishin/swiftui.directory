@@ -33,7 +33,7 @@ module.exports = (plop) => {
         type: 'list',
         name: 'category',
         message: 'Category:',
-        choices: [ 'Layout', 'Graphics', 'Color', 'Image', 'Data', 'Chart', 'Control' ]
+        choices: ['Extension', 'Layout', 'Graphics', 'Color', 'Image', 'Data', 'Chart', 'Control' ]
       },
       {
         type: 'input',
