@@ -42,12 +42,12 @@ const feedOptions = {
           createdDate: birthTime
           modifiedDate: modifiedTime
           package: childPackagesYaml {
-            name
             author {
               avatar
               name
               website
             }
+            name
             category
             description
             id
