@@ -7,6 +7,16 @@
 }
 
 .package-list {
+  --color-blue: #0096ff;
+  --color-orange: #ff6126;
+  --color-yellow: #ffb80f;
+  --color-green: #86c436;
+  --color-brown: #cd7800;
+  --color-purple: #b326ff;
+  --color-dark-blue: #2b55ff;
+  --color-teal: #06be85;
+  --color-gray: #5a727a;
+
   list-style: none;
   margin: 0;
   padding: 0;
@@ -100,7 +110,7 @@
       }
 
       &.chart {
-        background-color: #ff6126;
+        background-color: var(--color-brown);
 
         & .icon,
         & .icon-pattern {
@@ -109,7 +119,7 @@
       }
 
       &.layout {
-        background-color: #0096ff;
+        background-color: var(--color-blue);
 
         & .icon,
         & .icon-pattern {
@@ -118,7 +128,7 @@
       }
 
       &.animation {
-        background-color: #0096ff;
+        background-color: var(--color-yellow);
 
         & .icon,
         & .icon-pattern {
@@ -127,7 +137,7 @@
       }
 
       &.color {
-        background-color: #ff6126;
+        background-color: var(--color-teal);
 
         & .icon,
         & .icon-pattern {
@@ -136,7 +146,7 @@
       }
 
       &.control {
-        background-color: #0096ff;
+        background-color: var(--color-orange);
 
         & .icon,
         & .icon-pattern {
@@ -145,7 +155,7 @@
       }
 
       &.graphics {
-        background-color: #0096ff;
+        background-color: var(--color-purple);
 
         & .icon,
         & .icon-pattern {
@@ -154,7 +164,7 @@
       }
 
       &.image {
-        background-color: #0096ff;
+        background-color: var(--color-purple);
 
         & .icon,
         & .icon-pattern {
@@ -163,11 +173,20 @@
       }
 
       &.navigation {
-        background-color: #0096ff;
+        background-color: var(--color-dark-blue);
 
         & .icon,
         & .icon-pattern {
           background-image: url(/icons/navigation-icon.svg);
+        }
+      }
+
+      &.extension {
+        background-color: var(--color-gray);
+
+        & .icon,
+        & .icon-pattern {
+          background-image: url(/icons/control-icon.svg);
         }
       }
     }
