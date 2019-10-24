@@ -5,6 +5,7 @@ url: {{url}}
 license: {{license}}
 preview: 
 category: {{category}}{{tags}}
+added: {{added}}
 author:
   name: {{authorName}}
   website: {{authorWebsite}}

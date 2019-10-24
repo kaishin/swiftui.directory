@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 const inputRequired = (name) => {
   return (value) => (/.+/.test(value) ? true : `${name} is required`);
 };
@@ -57,6 +59,9 @@ module.exports = (plop) => {
       }
     ],
     actions: (data) => {
+      let date = Date.now();
+      data.added = moment(date).format('YYYY-MM-DDTHH:mmZ');
+
       if (data.tags) {
         data.tags = `\ntags:\n  - ${data.tags
           .split(',')
