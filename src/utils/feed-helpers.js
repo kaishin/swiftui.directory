@@ -36,36 +36,32 @@ const feedOptions = {
 
   feedQuery: `
   {
-    allFile(sort: {fields: birthTime, order: DESC}) {
+    allPackagesYaml(sort: { fields: added, order: DESC }) {
       edges {
         node {
-          createdDate: birthTime
-          modifiedDate: modifiedTime
-          package: childPackagesYaml {
-            author {
-              avatar
-              name
-              website
-            }
+          author {
+            avatar
             name
-            category
-            description
-            id
-            license
-            tags
-            url
+            website
           }
-          
+          added
+          name
+          category
+          description
+          id
+          license
+          tags
+          url
         }
       }
     }
   }
-  `
+  `,
 };
 
 module.exports = {
   writeFile,
   runQuery,
   feedOptions,
-  getFileUpdatedDate
+  getFileUpdatedDate,
 };

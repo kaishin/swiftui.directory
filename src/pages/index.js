@@ -7,7 +7,7 @@ import { graphql } from 'gatsby';
 class IndexPage extends Component {
   state = {
     query: '',
-    results: []
+    results: [],
   };
 
   componentDidMount() {
@@ -120,7 +120,7 @@ class IndexPage extends Component {
 
 export const query = graphql`
   query PackagesQuery {
-    allPackages: allPackagesYaml {
+    allPackages: allPackagesYaml(sort: { fields: added, order: DESC }) {
       edges {
         node {
           author {
@@ -128,6 +128,7 @@ export const query = graphql`
             name
             website
           }
+          added
           category
           description
           license

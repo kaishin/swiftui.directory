@@ -15,7 +15,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       node,
       name: 'searchIndex',
-      value: searchIndex
+      value: searchIndex,
     });
   }
 };
@@ -24,29 +24,29 @@ exports.onPostBuild = async ({ graphql }) => {
   const siteQuery = await runQuery(graphql, feedOptions.siteQuery);
   const {
     site: {
-      siteMetadata: { title: siteTitle, description: siteDescription, siteUrl, author: siteAuthor, email: siteEmail }
-    }
+      siteMetadata: { title: siteTitle, description: siteDescription, siteUrl, author: siteAuthor, email: siteEmail },
+    },
   } = siteQuery;
 
   // Main Feed
 
   const feedQuery = await runQuery(graphql, feedOptions.feedQuery);
-  const { allFile: { edges: data } } = feedQuery;
+  const { allPackagesYaml: { edges: data } } = feedQuery;
 
   const items = data.map((i) => {
-    const { node: { createdDate, modifiedDate, package } } = i;
+    const { node: package } = i;
 
     return {
       id: package.url,
       url: package.url,
       name: package.name,
-      datePublished: moment(createdDate).toDate(),
-      dateUpdated: moment(modifiedDate).toDate(),
+      datePublished: moment(package.added).toDate(),
+      dateUpdated: moment(package.added).toDate(),
       content: package.description,
       category: package.category,
       tags: package.tags,
       license: package.license,
-      author: package.author
+      author: package.author,
     };
   });
 
@@ -62,12 +62,12 @@ exports.onPostBuild = async ({ graphql }) => {
     image: url.resolve(siteUrl, 'icon-touch.png'),
     feedLinks: {
       rss: url.resolve(siteUrl, 'feed.xml'),
-      json: url.resolve(siteUrl, 'feed.json')
+      json: url.resolve(siteUrl, 'feed.json'),
     },
     author: {
       name: siteAuthor,
-      email: siteEmail
-    }
+      email: siteEmail,
+    },
   });
 
   items.slice(0, 10).forEach((item) => {
@@ -80,21 +80,21 @@ exports.onPostBuild = async ({ graphql }) => {
       extensions: [
         { name: 'tags', objects: item.tags },
         { name: 'category', objects: item.category },
-        { name: 'license', objects: item.license }
+        { name: 'license', objects: item.license },
       ],
       author: [
         {
           name: item.author.name,
-          link: item.author.website
-        }
-      ]
+          link: item.author.website,
+        },
+      ],
     });
   });
 
   newFeed.addContributor({
     name: siteAuthor,
     email: siteEmail,
-    link: siteUrl
+    link: siteUrl,
   });
 
   await writeFile(path.join(publicPath, 'feed.json'), newFeed.json1(), 'utf8').catch((r) => {
