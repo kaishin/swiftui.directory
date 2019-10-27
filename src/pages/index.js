@@ -39,7 +39,7 @@ class IndexPage extends Component {
             type="text"
             value={this.state.query}
             onChange={this.search}
-            placeholder={'Search libraries by name, keyword, author, etc.'}
+            placeholder={'Search components by name, keyword, author, etc.'}
           />
           <small className={'hint ' + (this.state.query.length > 0 ? '' : 'hidden')}>{this.searchHintText()}</small>
         </div>
@@ -47,6 +47,7 @@ class IndexPage extends Component {
         <div className="content-section">
           <section className={'search-container ' + (this.state.query.length > 2 ? '' : 'hidden')}>
             <div className="title-container">
+              <span className="line" />
               <h2 className="section-title">Search Results</h2>
               <span className="line" />
             </div>
@@ -57,6 +58,7 @@ class IndexPage extends Component {
 
           <section className={'browse-container ' + (this.state.query.length > 2 ? 'hidden' : '')}>
             <div className="title-container">
+              <span className="line" />
               <h2 className="section-title">Recently Added</h2>
               <span className="line" />
             </div>
@@ -105,15 +107,6 @@ class IndexPage extends Component {
   searchHintText() {
     if (this.state.query.length < 3) {
       return 'Minimum 3 characters';
-    } else {
-      return (
-        this.state.results.length +
-        ' result' +
-        (this.state.results.length === 1 ? '' : 's') +
-        " for '" +
-        this.state.query +
-        "'"
-      );
     }
   }
 }

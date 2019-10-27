@@ -151,6 +151,17 @@ a {
     height: 5px;
     opacity: 0.6;
     margin-left: 1rem;
+
+    &:nth-child(1) {
+      display: none;
+    }
+
+    @media (--card-one-column) {
+      &:nth-child(1) {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+    }
   }
 }
 
