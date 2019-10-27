@@ -22,7 +22,7 @@
     "gatsby-plugin-robots-txt": "^1.4.0",
     "gatsby-plugin-sharp": "^2.2.11",
     "gatsby-plugin-sitemap": "^2.2.6",
-    "gatsby-plugin-svgr": "^2.0.0",
+    "gatsby-plugin-svgr": "^2.0.2",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-abbr": "^1.0.0",
     "gatsby-remark-autolink-headers": "^2.1.0",
@@ -51,9 +51,9 @@
     "typeface-rubik": "^0.0.72"
   },
   "devDependencies": {
-    "prettier": "^1.18.2",
+    "@svgr/webpack": "^4.3.3",
     "plop": "^2.4.0",
-    "@svgr/webpack": "^4.3.0",
+    "prettier": "^1.18.2",
     "typescript": "^3.5.2"
   },
   "keywords": [

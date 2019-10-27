@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Card from '../components/card';
 import { graphql } from 'gatsby';
+import { ReactComponent as SearchIcon } from '../images/magnifier-icon.svg';
 
 class IndexPage extends Component {
   state = {
@@ -32,15 +33,19 @@ class IndexPage extends Component {
         <SEO title="Home" />
 
         <div className="header-body hidden">
-          <input
-            name="search"
-            id="search"
-            className="search-input"
-            type="text"
-            value={this.state.query}
-            onChange={this.search}
-            placeholder={'Search components by name, keyword, author, etc.'}
-          />
+          <label className="search-input-label">
+            <input
+              name="search"
+              id="search"
+              className="search-input"
+              type="text"
+              value={this.state.query}
+              onChange={this.search}
+              placeholder={'Search components by name, keyword, author, etc.'}
+            />
+            {/* <img className="search-icon" src="/icons/search-icon.svg" alt="Magnifier Icon" /> */}
+            <SearchIcon className="search-icon" alt="Magnifier Icon" />
+          </label>
           <small className={'hint ' + (this.state.query.length > 0 ? '' : 'hidden')}>{this.searchHintText()}</small>
         </div>
 

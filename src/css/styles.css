@@ -100,20 +100,37 @@ a {
     opacity: 0.2;
   }
 
+  & .search-icon {
+    position: absolute;
+    left: 0.5rem;
+    opacity: 0.4;
+    transform: scale(0.9);
+    top: 1.6rem;
+    display: inline-block;
+    fill: color-mod(var(--secondary-fg-color) alpha(90%));
+    transition: opacity 1s;
+  }
+
   & .search-input {
-    letter-spacing: 0.05em;
     background-color: var(--search-field-bg-color);
     border-radius: 0.5rem;
     border: none;
     color: var(--search-field-fg-color);
     font-size: 1rem;
+    letter-spacing: 0.05em;
     margin: 1rem 0;
     outline: none;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 2.7rem;
     width: 100%;
 
     &::placeholder {
       color: color-mod(var(--secondary-fg-color) alpha(90%));
+    }
+
+    &:focus {
+      & + .search-icon {
+        opacity: 1.0;
+      }
     }
   }
 
