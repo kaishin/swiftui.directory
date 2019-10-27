@@ -190,7 +190,7 @@
 
         & .icon,
         & .icon-pattern {
-          background-image: url(/icons/control-icon.svg);
+          background-image: url(/icons/extension-icon.svg);
         }
       }
     }
