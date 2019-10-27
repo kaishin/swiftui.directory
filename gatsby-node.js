@@ -70,15 +70,41 @@ exports.onPostBuild = async ({ graphql }) => {
     },
   });
 
-  items.slice(0, 10).forEach((item) => {
+  let all = new Feed({
+    title: siteTitle,
+    description: siteDescription,
+    link: siteUrl,
+    id: 'swiftui-directory',
+    copyright: '2019 – SwiftUI Directory',
+    feedLinks: {
+      json: url.resolve(siteUrl, 'feed.json'),
+    },
+  });
+
+  items.slice(0, 50).forEach((item) => {
     newFeed.addItem({
       title: item.name,
       id: item.url,
       link: item.url,
       published: item.datePublished,
       content: item.content,
+      author: [
+        {
+          name: item.author.name,
+          link: item.author.website,
+        },
+      ],
+    });
+  });
+
+  items.forEach((item) => {
+    all.addItem({
+      title: item.name,
+      link: item.url,
+      published: item.datePublished,
       extensions: [
         { name: 'tags', objects: item.tags },
+        { name: 'description', objects: item.content },
         { name: 'category', objects: item.category },
         { name: 'license', objects: item.license },
       ],
@@ -98,6 +124,10 @@ exports.onPostBuild = async ({ graphql }) => {
   });
 
   await writeFile(path.join(publicPath, 'feed.json'), newFeed.json1(), 'utf8').catch((r) => {
+    console.log('Failed to write JSON Feed file: ', r);
+  });
+
+  await writeFile(path.join(publicPath, 'all.json'), all.json1(), 'utf8').catch((r) => {
     console.log('Failed to write JSON Feed file: ', r);
   });
 
