@@ -41,9 +41,8 @@ class IndexPage extends Component {
               type="text"
               value={this.state.query}
               onChange={this.search}
-              placeholder={'Search components by name, keyword, author, etc.'}
+              placeholder={'Search by name, keyword, author, etc.'}
             />
-            {/* <img className="search-icon" src="/icons/search-icon.svg" alt="Magnifier Icon" /> */}
             <SearchIcon className="search-icon" alt="Magnifier Icon" />
           </label>
           <small className={'hint ' + (this.state.query.length > 0 ? '' : 'hidden')}>{this.searchHintText()}</small>
