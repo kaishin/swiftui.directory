@@ -55,7 +55,7 @@ class IndexPage extends Component {
               <h2 className="section-title">Search Results</h2>
               <span className="line" />
             </div>
-            <ul className="package-list">
+            <ul className="library-list">
               <ResultList />
             </ul>
           </section>
@@ -66,7 +66,7 @@ class IndexPage extends Component {
               <h2 className="section-title">Recently Added</h2>
               <span className="line" />
             </div>
-            <ol className="package-list">{packages.map(({ node }, id) => <Card index={id} item={node} query="" />)}</ol>
+            <ol className="library-list">{packages.map(({ node }, id) => <Card index={id} item={node} query="" />)}</ol>
           </section>
         </div>
       </Layout>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'SwiftUI Directory',
-    description: 'A curated directory of SwiftUI open-source packages.',
+    description: 'A curated directory of SwiftUI open-source libraries.',
     author: 'Reda Lemeden',
     email: 'hello@redalemeden.com',
     keywords: ['swiftui', 'packages', 'libraries', 'frameworks', 'spm'],

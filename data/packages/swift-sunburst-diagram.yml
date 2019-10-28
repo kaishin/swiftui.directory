@@ -1,0 +1,21 @@
+name: SwiftSunburstDiagram
+description: >
+  A library for rendering sunburst diagrams given a tree of objects. Supports animated updates and configurable colors and images. 
+url: https://github.com/lludo/SwiftSunburstDiagram
+license: MIT
+preview: 
+category: Chart
+tags:
+  - SPM
+  - Cocoapods
+  - iOS
+  - macOS
+  - tvOS
+  - watchOS
+  - Diagram
+  - Animation
+added: 2019-10-29T00:06+01:00
+author:
+  name: Ludovic Landry
+  website: http://about.me/ludoviclandry
+  avatar: https://avatars3.githubusercontent.com/u/631630

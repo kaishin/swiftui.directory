@@ -1,6 +1,7 @@
 name: SwiftUIX
 description: >
-  An extension to the standard SwiftUI library 
+  An extension to SwiftUI introducing new and imporved components,
+  extensions, and utilities to complement the standard library.
 url: https://github.com/SwiftUIX/SwiftUIX
 license: MIT
 preview: 

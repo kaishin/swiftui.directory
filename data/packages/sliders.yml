@@ -1,21 +1,20 @@
-name: Grid
+name: Sliders
 description: >
-  Grid-based layout library with configurable column count, item sizing, and item spacing.
-url: https://github.com/SwiftUIExtensions/Grid
+  A library for building custom single-value and range sliders.
+  Features a composable API to change the appearance of the tracks and thumbs.
+url: https://github.com/SwiftUIExtensions/Sliders
 license: MIT
 preview: 
-category: Layout
+category: Control
 tags:
   - SPM
-  - Preferences
-  - Flow
-  - Column
-  - Collection
   - macOS
+  - Catalyst
   - iOS
   - watchOS
   - tvOS
-added: 2019-10-20T13:20+02:00
+  - Gradient
+added: 2019-10-10T13:15+02:00
 author:
   name: SwiftUIExtensions 
   website: https://github.com/SwiftUIExtensions

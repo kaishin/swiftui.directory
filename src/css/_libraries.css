@@ -6,7 +6,7 @@
   width: 2rem;
 }
 
-.package-list {
+.library-list {
   --color-blue: #0096ff;
   --color-orange: #ff6126;
   --color-yellow: #ffb80f;
@@ -22,7 +22,10 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+  @media (--card-two-columns) {
+    justify-content: space-between;
+  }
 
   @media (--card-one-column) {
     justify-content: center;
@@ -43,6 +46,11 @@
 
     @media (--card-three-columns) {
       flex: 0 1 32%;
+      margin-right: 2%;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
     }
 
     @media (--card-two-columns) {

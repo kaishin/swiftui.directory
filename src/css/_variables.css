@@ -32,8 +32,8 @@
 @custom-media --dark-mode (prefers-color-scheme: dark);
 
 @custom-media --card-one-column (width < 45em);
-@custom-media --card-two-columns (width < 60em);
-@custom-media --card-three-columns (width >= 60em);
+@custom-media --card-two-columns (width < 65em);
+@custom-media --card-three-columns (width >= 65em);
 
 %side-pattern {
   position: relative;

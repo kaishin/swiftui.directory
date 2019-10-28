@@ -1,6 +1,7 @@
 name: QGrid
 description: >
    A collection view library with support for configurable column count, spacing, and padding.
+   Comes with a configurable demo.
 url: https://github.com/Q-Mobile/QGrid
 license: MIT
 preview: 
@@ -8,6 +9,7 @@ category: Layout
 tags:
   - iOS
   - macOS
+  - tvOS
   - Collection
   - Grid
   - SPM

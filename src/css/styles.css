@@ -1,5 +1,5 @@
 @import "_variables";
-@import "_packages";
+@import "_libraries";
 
 * {
   box-sizing: border-box;
