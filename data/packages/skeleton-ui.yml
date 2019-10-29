@@ -1,0 +1,21 @@
+name: SkeletonUI
+description: >
+  Animated loading view placeholders with a declarative syntax.
+  Supports configurable shapes, appearances, and animations.
+url: https://github.com/CSolanaM/SkeletonUI
+license: MIT
+preview: 
+category: Extension
+tags:
+  - iOS
+  - macOS
+  - tvOS
+  - watchOS
+  - SPM
+  - Cocoapods
+  - ViewModifier
+added: 2019-10-29T17:59+01:00
+author:
+  name: Carlos Solana Martínez
+  website: https://csolanam.io/
+  avatar: https://avatars0.githubusercontent.com/u/9338271
