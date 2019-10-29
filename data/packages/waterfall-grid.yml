@@ -1,0 +1,19 @@
+name: WaterfallGrid
+description: >
+  A waterfall grid layout view with configurable column count, item spacing, and grid padding. Comes with support for animated updates.
+url: https://github.com/paololeonardi/WaterfallGrid
+license: MIT
+preview: 
+category: Layout
+tags:
+  - SPM
+  - iOS
+  - macOS
+  - tvOS
+  - watchOS
+  - Collection
+added: 2019-10-29T12:37+01:00
+author:
+  name: Paolo Leonardi 
+  website: http://www.paololeonardi.com/
+  avatar: https://avatars2.githubusercontent.com/u/4065078
