@@ -35,9 +35,20 @@ const Layout = ({ children }) => (
               SwiftUI <span>Directory</span>
             </h1>
           </Link>
-          <p className="intro">
-            A curated collection of open-source SwiftUI libraries. Open an issue to suggest a new library.
-          </p>
+          <div className="header-content">
+            <p className="intro">A curated collection of open-source SwiftUI libraries.</p>
+            <ul className="links">
+              <li className="link standard">
+                <a href="https://github.com">Suggest a Library</a>
+              </li>
+              <li className="link rss">
+                <a href="https://github.com">RSS Feed</a>
+              </li>
+              <li className="link twitter">
+                <a href="https://github.com">Twitter</a>
+              </li>
+            </ul>
+          </div>
         </header>
 
         <main className="page-content">{children}</main>
