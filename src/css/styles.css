@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #0096ff;
+  color: var(--link-color);
 }
 
 .main-container {
@@ -47,6 +47,7 @@ a {
     line-height: 1;
     display: inline-block;
     margin-right: 2rem;
+    color: var(--primary-fg-color);
 
     & h1 {
       margin: 0;
@@ -102,11 +103,40 @@ a {
       & a {
         font-size: 0.8rem;
         border-radius: 2em;
-        background-color: gray;
-        padding: 0.1em 1em;
+        background-color: var(--card-background-color);
+        color: var(--color-green);
+        padding: 0.2em 1em;
+        transition: all 0.3s;
+
+        &:hover {
+          color: var(--card-background-color);
+          background-color: var(--color-green);
+        }
 
         @media (--compact-layout) {
           padding: 0.4em 1em;
+        }
+      }
+
+      &.twitter {
+        & a {
+          color: var(--color-blue);
+
+          &:hover {
+            color: var(--card-background-color);
+            background-color: var(--color-blue);
+          }
+        }
+      }
+
+      &.rss {
+        & a {
+          color: var(--color-brown);
+
+          &:hover {
+            color: var(--card-background-color);
+            background-color: var(--color-brown);
+          }
         }
       }
     }
@@ -157,6 +187,8 @@ a {
 
     &::placeholder {
       color: color-mod(var(--secondary-fg-color) alpha(90%));
+      font-size: 0.9rem;
+      font-weight: 300;
     }
 
     &:focus {

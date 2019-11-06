@@ -7,16 +7,6 @@
 }
 
 .library-list {
-  --color-blue: #0096ff;
-  --color-orange: #ff6126;
-  --color-yellow: #ffb80f;
-  --color-green: #86c436;
-  --color-brown: #cd7800;
-  --color-purple: #b326ff;
-  --color-dark-blue: #2b55ff;
-  --color-teal: #06be85;
-  --color-gray: #5a727a;
-
   list-style: none;
   margin: 0;
   padding: 0;

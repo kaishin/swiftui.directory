@@ -2,14 +2,24 @@
   --body-bg-color: white;
   --primary-fg-color: #13212d;
   --secondary-fg-color: #5374b1;
-  --link-color: #222;
+  --link-color: #0096ff;
   --side-pattern-bg-color: #99abd7;
-  --card-bg-color: color-mod(var(--link-color) alpha(10%));
-  --search-field-bg-color: color-mod(var(--secondary-fg-color) alpha(8%));
+  --card-background-color: color-mod(#99abd7 l(98%));
+  --search-field-bg-color: color-mod(var(--secondary-fg-color) l(97%));
 
   --full-width: 68rem;
   --side-pattern-offset: 3.4em;
   --search-field-fg-color: var(--primary-fg-color);
+
+  --color-blue: #0096ff;
+  --color-orange: #ff6126;
+  --color-yellow: #ffb80f;
+  --color-green: #86c436;
+  --color-brown: #cd7800;
+  --color-purple: #b326ff;
+  --color-dark-blue: #2b55ff;
+  --color-teal: #06be85;
+  --color-gray: #5a727a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,9 +27,9 @@
     --body-bg-color: #13212d;
     --primary-fg-color: white;
     --secondary-fg-color: #a4bfef;
-    --link-color: #dee2e6;
-    --card-bg-color: color-mod(var(--link-color) alpha(80%));
+    --link-color: #0096ff;
     --side-pattern-bg-color: #507a9d;
+    --card-background-color: #04090d;
     --search-field-bg-color: rgba(0, 0, 0, 0.4);
   }
 }

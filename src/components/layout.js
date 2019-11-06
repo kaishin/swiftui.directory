@@ -42,7 +42,7 @@ const Layout = ({ children }) => (
                 <a href="https://github.com">Suggest a Library</a>
               </li>
               <li className="link rss">
-                <a href="https://github.com">RSS Feed</a>
+                <a href="/feed.xml">RSS Feed</a>
               </li>
               <li className="link twitter">
                 <a href="https://github.com">Twitter</a>
