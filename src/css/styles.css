@@ -92,12 +92,17 @@ a {
 
     & .link {
       display: inline-block;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
       margin-bottom: 0.5rem;
 
       @media (--compact-layout) {
         margin-right: 0.5rem;
         margin-bottom: 1.2rem;
+      }
+
+      & .icon {
+        vertical-align: -0.2em;
+        margin-right: 0.4em;
       }
 
       & a {
@@ -111,6 +116,14 @@ a {
         &:hover {
           color: var(--card-background-color);
           background-color: var(--color-green);
+
+          & .icon {
+            fill: var(--card-background-color);
+          }
+        }
+
+        & .icon {
+          fill: var(--color-green);
         }
 
         @media (--compact-layout) {
@@ -125,6 +138,14 @@ a {
           &:hover {
             color: var(--card-background-color);
             background-color: var(--color-blue);
+
+            & .icon {
+              fill: var(--card-background-color);
+            }
+          }
+
+          & .icon {
+            fill: var(--color-blue);
           }
         }
       }
@@ -136,6 +157,14 @@ a {
           &:hover {
             color: var(--card-background-color);
             background-color: var(--color-brown);
+
+            & .icon {
+              fill: var(--card-background-color);
+            }
+          }
+
+          & .icon {
+            fill: var(--color-brown);
           }
         }
       }

@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql, Link } from 'gatsby';
+import { ReactComponent as SuggestIcon } from '../images/suggest-icon.svg';
+import { ReactComponent as TwitterIcon } from '../images/twitter-icon.svg';
+import { ReactComponent as RssIcon } from '../images/rss-icon.svg';
 
 import Seo from './seo';
 
@@ -39,13 +42,22 @@ const Layout = ({ children }) => (
             <p className="intro">A curated collection of open-source SwiftUI libraries.</p>
             <ul className="links">
               <li className="link standard">
-                <a href="https://github.com">Suggest a Library</a>
+                <a href="https://github.com">
+                  <SuggestIcon className="icon" alt="Bulb Icon" />
+                  Suggest a Library
+                </a>
               </li>
               <li className="link rss">
-                <a href="/feed.xml">RSS Feed</a>
+                <a href="/feed.xml">
+                  <RssIcon className="icon" alt="RSS Icon" />
+                  RSS Feed
+                </a>
               </li>
               <li className="link twitter">
-                <a href="https://github.com">Twitter</a>
+                <a href="https://github.com">
+                  <TwitterIcon className="icon" alt="Twitter Icon" />
+                  Twitter
+                </a>
               </li>
             </ul>
           </div>
