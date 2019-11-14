@@ -1,6 +1,6 @@
 name: SwiftSunburstDiagram
 description: >
-  A library for rendering sunburst diagrams given a tree of objects. Supports animated updates and configurable colors and images. 
+  Sunburst diagrams with nesting support. Comes with animated updates and configurable colors and images. 
 url: https://github.com/lludo/SwiftSunburstDiagram
 license: MIT
 preview: 

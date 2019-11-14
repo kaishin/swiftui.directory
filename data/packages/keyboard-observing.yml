@@ -1,0 +1,17 @@
+name: Keyboard Observing
+description: >
+  Adapt your layout based on keyboard state changes through Combine.
+  Easy to use through the provided view modifier.
+url: https://github.com/nickffox/KeyboardObserving
+license: MIT
+category: Extension
+tags:
+  - iOS
+  - Modifier
+  - Keyboard
+  - ObservableObject
+added: 2019-11-14T22:36+01:00
+author:
+  name: Nick Fox
+  website: http://www.nickfox.io
+  avatar: https://avatars3.githubusercontent.com/u/3590140

@@ -1,6 +1,6 @@
 name: SwiftUIBlurView
 description: >
-  A library that exposes the system blur styles as a SwiftUI view.
+  Exposes the system blur styles as a SwiftUI view.
   Includes a demo app showcasing all effects. 
 url: https://github.com/danielsaidi/SwiftUIBlurView
 license: MIT

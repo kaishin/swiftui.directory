@@ -1,6 +1,6 @@
 name: Sliders
 description: >
-  A library for building custom single-value and range sliders.
+  Custom single-value and range sliders.
   Features a composable API to change the appearance of the tracks and thumbs.
 url: https://github.com/SwiftUIExtensions/Sliders
 license: MIT

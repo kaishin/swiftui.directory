@@ -112,7 +112,7 @@
       }
 
       &.chart {
-        background-color: var(--color-brown);
+        background-color: var(--color-magenta);
 
         & .icon,
         & .icon-pattern {
@@ -184,7 +184,7 @@
       }
 
       &.extension {
-        background-color: var(--color-gray);
+        background-color: var(--color-green);
 
         & .icon,
         & .icon-pattern {

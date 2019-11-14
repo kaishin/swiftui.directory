@@ -20,6 +20,7 @@
   --color-dark-blue: #2b55ff;
   --color-teal: #06be85;
   --color-gray: #5a727a;
+  --color-magenta: #ff265e;
 }
 
 @media (prefers-color-scheme: dark) {
