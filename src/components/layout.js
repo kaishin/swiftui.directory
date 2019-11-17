@@ -42,7 +42,7 @@ const Layout = ({ children }) => (
             <p className="intro">A curated collection of open-source SwiftUI libraries.</p>
             <ul className="links">
               <li className="link standard">
-                <a href="https://github.com">
+                <a href="https://github.com/kaishin/swiftui.directory/issues/new">
                   <SuggestIcon className="icon" alt="Bulb Icon" />
                   Suggest a Library
                 </a>
@@ -54,7 +54,7 @@ const Layout = ({ children }) => (
                 </a>
               </li>
               <li className="link twitter">
-                <a href="https://github.com">
+                <a href="https://twitter.com/swiftuidir">
                   <TwitterIcon className="icon" alt="Twitter Icon" />
                   Twitter
                 </a>
