@@ -76,7 +76,7 @@ const Layout = ({ children }) => (
             <span className="copyright">
               <em>&copy;</em> {new Date().getFullYear()}{' '}
               <a href="https://redalemeden.com">{data.site.siteMetadata.author}</a> —{' '}
-              <a href="https://github.com/kaishin/redalemeden.com">Source</a>
+              <a href="https://github.com/kaishin/swiftui.directory">Source</a>
             </span>
           </div>
         </footer>
