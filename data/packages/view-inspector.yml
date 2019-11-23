@@ -1,0 +1,20 @@
+name: ViewInspector
+description: >
+  Adds unit testing to SwiftUI by traversing the view hierarchy during runtime. Allows for inspecting state and triggering effects. 
+url: https://github.com/nalexn/ViewInspector
+license: MIT
+preview: 
+category: Extension
+tags:
+  - Unit
+  - Testing
+  - Test
+  - Inspect
+  - Inspection
+  - Hierarchy
+  - Mirror
+added: 2019-11-24T00:49+01:00
+author:
+  name: Alexey
+  website: https://nalexn.github.io/
+  avatar: https://avatars1.githubusercontent.com/u/1594746
