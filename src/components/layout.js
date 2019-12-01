@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
     `}
     render={(data) => (
       <section className="main-container">
-        <Seo title="Home" />
+        <Seo />
         <header className="site-header">
           <Link to="/" activeClassName="header-link">
             <h1>

@@ -30,7 +30,7 @@ class IndexPage extends Component {
 
     return (
       <Layout>
-        <SEO title="Home" />
+        <SEO title={this.props.data.site.siteMetadata.title} />
 
         <div className="header-body hidden">
           <label className="search-input-label">
@@ -117,6 +117,11 @@ class IndexPage extends Component {
 
 export const query = graphql`
   query PackagesQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allPackages: allPackagesYaml(sort: { fields: added, order: DESC }, limit: 12) {
       edges {
         node {
