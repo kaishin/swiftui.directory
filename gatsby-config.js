@@ -19,6 +19,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-yaml',
+    'gatsby-plugin-robots-txt',
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-filesystem',
