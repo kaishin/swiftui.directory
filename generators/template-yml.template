@@ -10,3 +10,4 @@ author:
   name: {{authorName}}
   website: {{authorWebsite}}
   avatar: {{authorAvatar}}
+  twitter: {{authorTwitter}}

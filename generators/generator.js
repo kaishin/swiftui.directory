@@ -11,52 +11,57 @@ module.exports = (plop) => {
         type: 'input',
         name: 'name',
         message: 'Name:',
-        validate: inputRequired('name')
+        validate: inputRequired('name'),
       },
       {
         type: 'input',
         name: 'description',
         message: 'Description:',
-        validate: inputRequired('description')
+        validate: inputRequired('description'),
       },
       {
         type: 'input',
         name: 'url',
-        message: 'URL:'
+        message: 'URL:',
       },
       {
         type: 'list',
         name: 'license',
         message: 'License:',
-        choices: [ 'MIT', 'GPL' ],
-        default: 0
+        choices: ['MIT', 'GPL'],
+        default: 0,
       },
       {
         type: 'list',
         name: 'category',
         message: 'Category:',
-        choices: ['Extension', 'Layout', 'Graphics', 'Color', 'Image', 'Data', 'Chart', 'Control' ]
+        choices: ['Extension', 'Layout', 'Graphics', 'Color', 'Image', 'Data', 'Chart', 'Control'],
       },
       {
         type: 'input',
         name: 'tags',
-        message: 'Comma-separated tags:'
+        message: 'Comma-separated tags:',
       },
       {
         type: 'input',
         name: 'authorName',
-        message: 'Author name:'
+        message: 'Author name:',
       },
       {
         type: 'input',
         name: 'authorWebsite',
-        message: 'Author website:'
+        message: 'Author website:',
       },
       {
         type: 'input',
         name: 'authorAvatar',
-        message: 'Author avatar:'
-      }
+        message: 'Author avatar:',
+      },
+      {
+        type: 'input',
+        name: 'authorTwitter',
+        message: 'Author Twitter:',
+      },
     ],
     actions: (data) => {
       let date = Date.now();
@@ -75,9 +80,9 @@ module.exports = (plop) => {
         {
           type: 'add',
           path: '../data/packages/{{dashCase name}}.yml',
-          templateFile: './template-yml.template'
-        }
+          templateFile: './template-yml.template',
+        },
       ];
-    }
+    },
   });
 };
