@@ -1,0 +1,26 @@
+name: SDWebImageSwiftUI
+description: >
+  Display local and remote images in your SwiftUI views.
+  Supports caching, animated formats, and more. Depends on SDWebImage.
+url: https://github.com/SDWebImage/SDWebImageSwiftUI
+license: MIT
+category: Image
+tags:
+  - GIF
+  - APNG
+  - HEIF
+  - AVIF
+  - SVG
+  - PDF
+  - CPU
+  - Animated
+  - Network
+  - Image
+  - Remote
+  - WebImage
+added: 2019-12-01T18:59+01:00
+author:
+  name: DreamPiggy
+  website: https://dreampiggy.com
+  avatar: https://avatars0.githubusercontent.com/u/6919743
+  twitter: DreamingPiggy 
