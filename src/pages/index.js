@@ -66,7 +66,7 @@ class IndexPage extends Component {
               <h2 className="section-title">Recently Added</h2>
               <span className="line" />
             </div>
-            <ol className="library-list">{packages.map(({ node }, id) => <Card index={id} item={node} query="" />)}</ol>
+            <ol className="library-list">{packages.map(({ node }, id) => <Card key={id} item={node} query="" />)}</ol>
           </section>
         </div>
       </Layout>
