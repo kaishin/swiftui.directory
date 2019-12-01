@@ -43,6 +43,7 @@ const feedOptions = {
             avatar
             name
             website
+            twitter
           }
           added
           name

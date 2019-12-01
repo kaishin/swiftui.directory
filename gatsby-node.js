@@ -88,6 +88,7 @@ exports.onPostBuild = async ({ graphql }) => {
       link: item.url,
       published: item.datePublished,
       content: item.content,
+      extensions: [{ name: 'metadata', objects: { authorTwitter: item.author.twitter } }],
       author: [
         {
           name: item.author.name,
@@ -107,12 +108,7 @@ exports.onPostBuild = async ({ graphql }) => {
         { name: 'description', objects: item.content },
         { name: 'category', objects: item.category },
         { name: 'license', objects: item.license },
-      ],
-      author: [
-        {
-          name: item.author.name,
-          link: item.author.website,
-        },
+        { name: 'author', objects: item.author },
       ],
     });
   });
