@@ -117,7 +117,7 @@ class IndexPage extends Component {
 
 export const query = graphql`
   query PackagesQuery {
-    allPackages: allPackagesYaml(sort: { fields: added, order: DESC }) {
+    allPackages: allPackagesYaml(sort: { fields: added, order: DESC }, limit: 12) {
       edges {
         node {
           author {
