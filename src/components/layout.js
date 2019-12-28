@@ -68,9 +68,9 @@ const Layout = ({ children }) => (
         <footer className="site-footer">
           <div className="footer-content">
             <p className="legal">
-              This website doesn't store any personal information from visitors, including IP addresses, geolocation,
-              and browser fingerprints. <a href="https://usefathom.com">Fathom</a> is used to collect basic,
-              non-identifying data such as visitor count and referrers.
+              This website doesn't store any personal information from visitors.{' '}
+              <a href="https://www.okayanalytics.com">Okay Analytics</a> is used to collect basic, non-identifying data
+              such as visitor count and referrers.
               <br /> <br />This website is not affiliated with Apple nor the Swift open-source project.
             </p>
             <span className="copyright">
