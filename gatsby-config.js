@@ -19,6 +19,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-yaml',
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-postcss',
     {
