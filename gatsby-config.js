@@ -29,13 +29,6 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-plugin-fathom',
-      options: {
-        trackingUrl: 'stats.redalemeden.com',
-        siteId: 'TYGFF',
-      },
-    },
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-flexsearch',

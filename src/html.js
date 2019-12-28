@@ -15,6 +15,9 @@ export default function HTML(props) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#13212d" />
         <meta name="theme-color" content="#ffffff" />
+        {process.env.NODE_ENV === 'production' && (
+          <script async src="https://hosted.okayanalytics.com/tracker.js?tid=OA-KP7S1O06" />
+        )}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
