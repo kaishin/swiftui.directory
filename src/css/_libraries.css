@@ -80,7 +80,7 @@
 
       & .avatar {
         --size: 22px;
-        background-color: black;
+        background-color: #ddd;
         border-radius: calc(var(--size) / 2);
         height: var(--size);
         margin-right: 0.5rem;

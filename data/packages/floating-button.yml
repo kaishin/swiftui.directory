@@ -1,0 +1,22 @@
+name: FloatingButton
+description: >
+  Modular floating button menu with customizable layout and animation. Supports both vertical and radial menus.
+url: https://github.com/exyte/FloatingButton
+license: MIT
+category: Control
+tags:
+  - Button
+  - Menu
+  - Radial
+  - Circle
+  - SPM
+  - macOS
+  - iOS
+  - watchOS
+  - tvOS
+added: 2019-12-28T14:29+01:00
+author:
+  name: Exyte
+  website: https://exyte.com
+  avatar: https://avatars2.githubusercontent.com/u/10406525
+  twitter: exyteHQ
