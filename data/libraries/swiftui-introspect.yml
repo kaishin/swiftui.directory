@@ -1,0 +1,19 @@
+name: ' SwiftUI-Introspect'
+description: >-
+  Introspect the underlying UIKit or AppKit views behind any SwiftUI view. Works
+  with both UIKit and AppKit.
+url: 'https://github.com/siteline/SwiftUI-Introspect'
+author:
+  avatar: 'https://avatars2.githubusercontent.com/u/55716259'
+  name: Siteline
+  twitter: ldiqual
+  website: 'https://github.com/siteline'
+license: MIT
+category: Extension
+tags:
+  - UIKit
+  - AppKit
+  - Hierarchy
+  - Inspection
+  - ''
+added: '2020-02-17T21:24+01:00'
