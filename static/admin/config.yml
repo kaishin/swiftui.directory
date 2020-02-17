@@ -10,6 +10,8 @@ collections:
     label: Libraries
     label_singular: Library
     identifier_field: name
+    extension: yml
+    format: yml
     description: Add a new library.
     folder: data/libraries
     create: true
