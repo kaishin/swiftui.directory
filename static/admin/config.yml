@@ -31,4 +31,4 @@ collections:
       - { name: license, label: License, widget: select, options: ["MIT", "GPL", "Apache"] }
       - { name: category, label: Category, widget: select, options: ['Extension', 'Layout', 'Graphics', 'Color', 'Image', 'Data', 'Chart', 'Control'] }
       - { name: tags, label: Tags, widget: list }
-      - { name: added, label: "Date Added", widget: datetime }
+      - { name: added, label: "Date Added", widget: datetime, format: 'YYYY-MM-DDTHH:mmZ' }
