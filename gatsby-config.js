@@ -9,6 +9,15 @@ module.exports = {
     authorBio: 'Designer, programmer, and illustrator based in Stockholm, Sweden.',
   },
   plugins: [
+    'gatsby-plugin-netlify',
+    'gatsby-plugin-netlify-cms',
+    'gatsby-transformer-yaml',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -18,24 +27,17 @@ module.exports = {
         },
       },
     },
-    'gatsby-transformer-yaml',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-robots-txt',
-    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/data/`,
       },
     },
-    'gatsby-plugin-react-helmet',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-flexsearch',
       options: {
         languages: ['en'],
-        type: 'PackagesYaml',
+        type: 'LibrariesYaml',
         fields: [
           {
             name: 'name',

@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: kaishin/swiftui.directory
+
+publish_mode: editorial_workflow
+media_folder: static/assets
+
+collections:
+  - name: libraries
+    label: Libraries
+    label_singular: Library
+    identifier_field: name
+    description: Add a new library.
+    folder: data/libraries
+    create: true
+    fields:
+      - { name: name, label: Name }
+      - { name: description, label: Description, widget: text }
+      - { name: url, label: URL }
+      - { name: preview, label: Preview, widget: image, required: false}
+      - label: "Author"
+        name: "author"
+        widget: object
+        fields:
+          - { name: name, label: Name }
+          - { name: website, label: Website }
+          - { name: avatar, label: Avatar }
+          - { name: twitter, label: Twitter, required: false }
+      - { name: license, label: License, widget: select, options: ["MIT", "GPL", "Apache"] }
+      - { name: category, label: Category, widget: select, options: ['Extension', 'Layout', 'Graphics', 'Color', 'Image', 'Data', 'Chart', 'Control'] }
+      - { name: tags, label: Tags, widget: list }
+      - { name: added, label: "Date Added", widget: datetime }

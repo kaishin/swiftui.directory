@@ -36,7 +36,7 @@ const feedOptions = {
 
   feedQuery: `
   {
-    allPackagesYaml(sort: { fields: added, order: DESC }) {
+    allLibrariesYaml(sort: { fields: added, order: DESC }) {
       edges {
         node {
           author {

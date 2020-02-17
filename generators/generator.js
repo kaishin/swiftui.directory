@@ -79,7 +79,7 @@ module.exports = (plop) => {
       return [
         {
           type: 'add',
-          path: '../data/packages/{{dashCase name}}.yml',
+          path: '../data/libraries/{{dashCase name}}.yml',
           templateFile: './template-yml.template',
         },
       ];

@@ -8,7 +8,7 @@ const publicPath = './public';
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `PackagesYaml`) {
+  if (node.internal.type === `LibrariesYaml`) {
     const searchIndex =
       node.description + ' ' + node.tags.join(', ') + ' ' + node.category + ' ' + node.license + ' ' + node.author.name;
 
@@ -31,7 +31,7 @@ exports.onPostBuild = async ({ graphql }) => {
   // Main Feed
 
   const feedQuery = await runQuery(graphql, feedOptions.feedQuery);
-  const { allPackagesYaml: { edges: data } } = feedQuery;
+  const { allLibrariesYaml: { edges: data } } = feedQuery;
 
   const items = data.map((i) => {
     const { node: package } = i;

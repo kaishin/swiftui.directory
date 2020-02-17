@@ -16,7 +16,7 @@ class IndexPage extends Component {
   }
 
   render() {
-    const { edges: packages } = this.props.data.allPackages;
+    const { edges: libraries } = this.props.data.allLibraries;
 
     const ResultList = () => {
       if (this.state.results.length > 0) {
@@ -66,7 +66,7 @@ class IndexPage extends Component {
               <h2 className="section-title">Recently Added</h2>
               <span className="line" />
             </div>
-            <ol className="library-list">{packages.map(({ node }, id) => <Card key={id} item={node} query="" />)}</ol>
+            <ol className="library-list">{libraries.map(({ node }, id) => <Card key={id} item={node} query="" />)}</ol>
           </section>
         </div>
       </Layout>
@@ -116,13 +116,13 @@ class IndexPage extends Component {
 }
 
 export const query = graphql`
-  query PackagesQuery {
+  query LibrariesQuery {
     site {
       siteMetadata {
         title
       }
     }
-    allPackages: allPackagesYaml(sort: { fields: added, order: DESC }, limit: 12) {
+    allLibraries: allLibrariesYaml(sort: { fields: added, order: DESC }, limit: 12) {
       edges {
         node {
           author {
