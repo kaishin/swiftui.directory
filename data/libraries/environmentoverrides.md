@@ -1,4 +1,3 @@
----
 name: EnvironmentOverrides
 description: >-
   Adds a control panel for changing color themes, accessibility settings, and
@@ -21,6 +20,4 @@ tags:
   - Localization
   - Dynamic
   - Accessibility
-added: 2020-02-17T00:54:39.050Z
----
-
+added: 2020-02-17T00:54+01:00
