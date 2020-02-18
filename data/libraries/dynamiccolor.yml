@@ -1,7 +1,7 @@
 name: DynamicColor
 description: >-
   Create, manipulate, and inspect colors. Supports different color
-  representation including hex, RGBA, and HSL.
+  representations including hex, RGBA, and HSL.
 url: 'https://github.com/yannickl/DynamicColor'
 author:
   avatar: 'https://avatars1.githubusercontent.com/u/798235'
