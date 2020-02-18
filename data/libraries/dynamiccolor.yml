@@ -1,0 +1,28 @@
+name: DynamicColor
+description: >-
+  Create, manipulate, and inspect colors. Supports different color
+  representation including hex, RGBA, and HSL.
+url: 'https://github.com/yannickl/DynamicColor'
+author:
+  avatar: 'https://avatars1.githubusercontent.com/u/798235'
+  name: Yannick Loriot
+  twitter: yannickloriot
+  website: 'http://yannickl.github.io/'
+license: MIT
+category: Color
+tags:
+  - iOS
+  - tvOS
+  - macOS
+  - watchOS
+  - Darken
+  - Lighten
+  - Hue
+  - Saturation
+  - Gradient
+  - Lab
+  - Mix
+  - Invert
+  - XYZ
+  - HSB
+added: '2020-02-18T14:05+01:00'
