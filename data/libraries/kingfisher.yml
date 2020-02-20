@@ -1,0 +1,23 @@
+name: Kingfisher
+description: >-
+  Adds support for asynchronous downloading and caching of Web images. Provides
+  additional image processing APIs and integration with SwiftUI.
+url: 'https://github.com/onevcat/Kingfisher'
+author:
+  avatar: 'https://avatars3.githubusercontent.com/u/1019875'
+  name: Wei Wang
+  twitter: onevcat
+  website: 'https://onev.cat/'
+license: MIT
+category: Image
+tags:
+  - Memory
+  - Disk
+  - iOS
+  - macOS
+  - tvOS
+  - watchOS
+  - Cache
+  - Caching
+  - Prefetching
+added: '2020-02-20T13:21+01:00'
