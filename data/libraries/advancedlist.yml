@@ -1,6 +1,6 @@
 name: AdvancedList
 description: >-
-  Adds pagination, empty, error, and loading states to SwiftUI's List. Supports
+  Adds a custom list control with pagination, empty, error, and loading states. Come with helpers for
   move and delete actions.
 url: 'https://github.com/crelies/AdvancedList'
 author:
