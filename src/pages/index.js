@@ -122,7 +122,7 @@ export const query = graphql`
         title
       }
     }
-    allLibraries: allLibrariesYaml(sort: { fields: added, order: DESC }, limit: 12) {
+    allLibraries: allLibrariesYaml(sort: { fields: added, order: DESC }, limit: 18) {
       edges {
         node {
           author {
