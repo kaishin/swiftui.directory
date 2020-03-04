@@ -7,19 +7,16 @@
 }
 
 .library-list {
+  --gap: 1rem;
+  --max-per-line: 3;
+  --gap-total: calc(var(--gap) * (var(--max-per-line) - 1));
+  --available-space: calc(var(--full-width) - var(--gap-total));
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (--card-two-columns) {
-    justify-content: space-between;
-  }
-
-  @media (--card-one-column) {
-    justify-content: center;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--available-space) / var(--max-per-line)), 1fr));
+  grid-gap: var(--gap);
 
   & .card {
     --icon-container-width: 3.75rem;
@@ -27,30 +24,10 @@
     border-radius: 0.9rem;
     border: 1px solid rgba(116, 165, 255, 0.15);
     box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.05);
-    height: 12rem;
-    margin-bottom: 1.5rem;
     mask-image: radial-gradient(white, black);
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
-
-    @media (--card-three-columns) {
-      flex: 0 1 32%;
-      margin-right: 2%;
-
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-    }
-
-    @media (--card-two-columns) {
-      flex: 0 1 49%;
-    }
-
-    @media (--card-one-column) {
-      flex: 0 1 22em;
-      height: auto;
-    }
 
     &:hover {
       transform: scale(1.05);
