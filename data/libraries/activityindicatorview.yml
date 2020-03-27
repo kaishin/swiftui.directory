@@ -1,0 +1,24 @@
+name: ActivityIndicatorView
+description: >-
+  A collection of preset loading indicators. Provides a binding for showing the
+  indicator and supports customization through the default SwiftUI modifiers.
+url: 'https://github.com/exyte/ActivityIndicatorView'
+author:
+  name: Exyte
+  website: 'https://exyte.com'
+  avatar: 'https://avatars2.githubusercontent.com/u/10406525'
+  twitter: exyteHQ
+license: MIT
+category: Control
+tags:
+  - SPM
+  - macOS
+  - iOS
+  - watchOS
+  - tvOS
+  - Loader
+  - Loading
+  - Indicator
+  - Spinner
+  - Activity
+added: '2020-03-27T16:47+01:00'
