@@ -1,0 +1,24 @@
+name: Gala
+description: >-
+  Easily generate SwiftUI preview variants in Xcode. Support light/dark mode,
+  layout directions, legibility weights, size classes, and content size
+  categories.
+url: 'https://github.com/finestructure/Gala'
+author:
+  name: Sven A. Schmidt
+  website: 'https://finestructure.co/'
+  avatar: 'https://avatars3.githubusercontent.com/u/65520'
+  twitter: _sa_s
+license: MIT
+category: Extension
+tags:
+  - Preview
+  - Size
+  - Classes
+  - Categories
+  - iOS
+  - macOS
+  - tvOS
+  - watchOS
+  - Dark
+added: '2020-04-03T16:53+02:00'
