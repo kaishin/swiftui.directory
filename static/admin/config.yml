@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: kaishin/swiftui.directory
+  squash_merges: true
 
 publish_mode: editorial_workflow
 media_folder: static/assets
