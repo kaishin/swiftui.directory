@@ -1,0 +1,23 @@
+name: PopupView
+description: >-
+  Sliding toasts and popups for your SwiftUI views. Supports styling, custom
+  animations, and auto-hiding.
+url: 'https://github.com/exyte/PopupView'
+author:
+  name: Exyte
+  website: 'https://exyte.com'
+  avatar: 'https://avatars2.githubusercontent.com/u/10406525'
+  twitter: exyteHQ
+license: MIT
+category: Control
+tags:
+  - ZStack
+  - Toast
+  - SPM
+  - iOS
+  - watchOS
+  - macOS
+  - Alert
+  - Message
+  - Info
+added: '2020-05-10T22:00+02:00'
