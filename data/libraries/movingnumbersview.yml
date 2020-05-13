@@ -1,0 +1,22 @@
+name: MovingNumbersView
+description: Display numbers using animated digit transitions. Supports digit
+  customization, decimals, and negative numbers.
+url: https://github.com/aunnnn/MovingNumbersView
+author:
+  name: Wirawit Rueopas
+  website: https://aunnnn.com
+  avatar: https://avatars1.githubusercontent.com/u/5901345
+license: MIT
+category: Control
+tags:
+  - Digit
+  - Number
+  - SPM
+  - iOS
+  - macOS
+  - Animation
+  - Transition
+  - Int
+  - Float
+  - Double
+added: 2020-05-13T16:52+02:00
