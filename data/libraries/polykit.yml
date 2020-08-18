@@ -1,5 +1,6 @@
 name: PolyKit
-description: Create rounded-corner polygonal shapes. Supports configurable sides and radii.
+description: Create rounded-corner polygonal shapes with configurable side count
+  and radius values.
 url: https://github.com/hexagons/PolyKit
 author:
   avatar: https://avatars3.githubusercontent.com/u/7947442
