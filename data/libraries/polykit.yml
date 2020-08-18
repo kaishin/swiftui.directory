@@ -1,0 +1,20 @@
+name: PolyKit
+description: Create rounded-corner polygonal shapes. Supports configurable sides and radii.
+url: https://github.com/hexagons/PolyKit
+author:
+  avatar: https://avatars3.githubusercontent.com/u/7947442
+  name: Anton ⬢ Hexagons
+  website: http://hexagons.net
+  twitter: anton_hexagons
+license: MIT
+category: Graphics
+tags:
+  - Path
+  - Shape
+  - Geometry
+  - Radius
+  - iOS
+  - macOS
+  - tvOS
+  - watchOS
+added: 2020-08-18T10:13+02:00
