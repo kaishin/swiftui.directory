@@ -1,0 +1,24 @@
+name: FetchImage
+description: Download remote images using Nuke and display them in SwiftUI
+  views. Supports caching, processing, rate limiting, and more.
+url: https://github.com/kean/FetchImage
+author:
+  name: Alex Grebenyuk
+  website: http://kean.blog/
+  avatar: https://avatars3.githubusercontent.com/u/1567433
+  twitter: a_grebenyuk
+license: MIT
+category: Image
+tags:
+  - Network
+  - Image
+  - Remote
+  - Load
+  - JPEG
+  - HEIF
+  - WebP
+  - SVG
+  - GIF
+  - Plugins
+  - ""
+added: 2020-08-21T14:27+02:00
