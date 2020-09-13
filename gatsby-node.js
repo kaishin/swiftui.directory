@@ -98,6 +98,21 @@ exports.onPostBuild = async ({ graphql }) => {
     });
   });
 
+  newFeed.addItem({
+    title: 'Moving to a new URL',
+    id: 'https://swiftuidir.redalemeden.com',
+    link: 'https://swiftuidir.redalemeden.com',
+    published: '2020-09-13T23:30:00.000Z',
+    content:
+      'The website has moved to https://swiftuidir.redalemeden.com. Please update your feed subscriptions accordingly.',
+    author: [
+      {
+        name: item.author.name,
+        link: item.author.website,
+      },
+    ],
+  });
+
   items.forEach((item) => {
     all.addItem({
       title: item.name,
