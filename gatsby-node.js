@@ -102,7 +102,7 @@ exports.onPostBuild = async ({ graphql }) => {
     title: 'Moving to a new URL',
     id: 'https://swiftuidir.redalemeden.com',
     link: 'https://swiftuidir.redalemeden.com',
-    published: '2020-09-13T23:30:00.000Z',
+    published: new Date(),
     content:
       'The website has moved to https://swiftuidir.redalemeden.com. Please update your feed subscriptions accordingly.',
     author: [
