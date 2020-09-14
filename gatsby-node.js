@@ -98,7 +98,7 @@ exports.onPostBuild = async ({ graphql }) => {
     });
   });
 
-  newFeed.addItem({
+  let moving = {
     title: 'Moving to a new URL',
     id: 'https://swiftuidir.redalemeden.com',
     link: 'https://swiftuidir.redalemeden.com',
@@ -107,11 +107,13 @@ exports.onPostBuild = async ({ graphql }) => {
       'The website has moved to https://swiftuidir.redalemeden.com. Please update your feed subscriptions accordingly.',
     author: [
       {
-        name: item.author.name,
-        link: item.author.website,
+        name: 'Reda Lemeden',
+        link: 'https://redalemeden.com',
       },
     ],
-  });
+  };
+
+  newFeed.addItem(moving);
 
   items.forEach((item) => {
     all.addItem({
@@ -127,6 +129,8 @@ exports.onPostBuild = async ({ graphql }) => {
       ],
     });
   });
+
+  all.addItem(moving);
 
   newFeed.addContributor({
     name: siteAuthor,
