@@ -1,0 +1,18 @@
+name: BottomSheet
+description: A bindable custom sheet that slides from the bottom of the screen.
+  Height, indicator visibility, and colors are all customizable.
+url: https://github.com/weitieda/bottom-sheet
+author:
+  name: Tieda
+  website: https://tiedawei.com
+  avatar: https://avatars2.githubusercontent.com/u/35972055
+license: MIT
+category: Layout
+tags:
+  - Sheet
+  - Sliding
+  - Drag
+  - Draggable
+  - Presentation
+  - Presented
+added: 2020-09-29T21:22+02:00
