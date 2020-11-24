@@ -4,7 +4,7 @@ description: A visual effect view wrapper based on Apple's own implementation.
 url: https://github.com/twostraws/VisualEffects
 author:
   avatar: https://avatars1.githubusercontent.com/u/190200
-  twitter: https://twitter.com/twostraws
+  twitter: twostraws
   website: https://www.hackingwithswift.com
   name: Paul Hudson
 license: MIT
