@@ -1,0 +1,20 @@
+name: NavigationStack
+description: An alternative implementation of stack-based navigation providing
+  more control on animations and programmatic navigation.
+url: https://github.com/matteopuc/swiftui-navigation-stack
+author:
+  name: Matteo
+  website: https://matteo-puccinelli.medium.com/
+  avatar: https://avatars.githubusercontent.com/u/5569047
+  twitter: matteopuc
+license: MIT
+category: Control
+tags:
+  - Navigation
+  - Stack
+  - Push
+  - Pop
+  - Back
+  - Programmatic
+  - Transition
+added: 2021-04-01T12:35+02:00
