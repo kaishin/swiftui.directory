@@ -198,14 +198,14 @@ a {
     transform: scale(0.9);
     top: 1.6rem;
     display: inline-block;
-    fill: color-mod(var(--secondary-fg-color) alpha(90%));
+    fill: var(--secondary-fg-color);
     transition: opacity 1s;
   }
 
   & .search-input {
-    background-color: var(--search-field-bg-color);
+    background: transparent;
+    border: 2px solid var(--search-field-border-color);
     border-radius: 0.5rem;
-    border: none;
     color: var(--search-field-fg-color);
     font-size: 1rem;
     letter-spacing: 0.05em;
@@ -215,7 +215,7 @@ a {
     width: 100%;
 
     &::placeholder {
-      color: color-mod(var(--secondary-fg-color) alpha(90%));
+      color: var(--secondary-fg-color);
       font-size: 0.9rem;
       font-weight: 300;
     }

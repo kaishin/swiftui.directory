@@ -21,6 +21,7 @@
   & .card {
     --icon-container-width: 3.75rem;
     background-image: linear-gradient(180deg, white, #fbfcff);
+    background: var(--card-background-color);
     border-radius: 0.9rem;
     border: 1px solid rgba(116, 165, 255, 0.15);
     box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.05);
@@ -37,11 +38,6 @@
       display: flex;
       text-decoration: none;
       color: var(--primary-fg-color);
-    }
-
-    @media (--dark-mode) {
-      background: #04090d;
-      border-image: none;
     }
 
     & .title {

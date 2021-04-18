@@ -1,16 +1,7 @@
-:root {
-  --body-bg-color: white;
-  --primary-fg-color: #13212d;
-  --secondary-fg-color: #5374b1;
-  --link-color: #0096ff;
-  --side-pattern-bg-color: #99abd7;
-  --card-background-color: color-mod(#99abd7 l(98%));
-  --search-field-bg-color: color-mod(var(--secondary-fg-color) l(97%));
+@custom-media --dark-mode (prefers-color-scheme: dark);
+@custom-media --light-mode (prefers-color-scheme: light);
 
-  --full-width: 68rem;
-  --side-pattern-offset: 3.4em;
-  --search-field-fg-color: var(--primary-fg-color);
-
+%base-theme {
   --color-blue: #0096ff;
   --color-orange: #ff6126;
   --color-yellow: #ffb80f;
@@ -21,18 +12,51 @@
   --color-teal: #06be85;
   --color-gray: #5a727a;
   --color-magenta: #ff265e;
+
+  --full-width: 68rem;
+  --side-pattern-offset: 3.4em;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg-color: #13212d;
-    --primary-fg-color: white;
-    --secondary-fg-color: #a4bfef;
-    --link-color: #0096ff;
-    --side-pattern-bg-color: #507a9d;
-    --card-background-color: #04090d;
-    --search-field-bg-color: rgba(0, 0, 0, 0.4);
+%light-theme {
+  --body-bg-color: white;
+  --primary-fg-color: #13212d;
+  --secondary-fg-color: #5374b1;
+  --link-color: #0096ff;
+  --side-pattern-bg-color: #99abd7;
+  --card-background-color: color-mod(#99abd7 l(98%));
+  --search-field-fg-color: var(--primary-fg-color);
+  --search-field-border-color: color-mod(#5374b1 l(80%));
+}
+
+%dark-theme {
+  --body-bg-color: #13212d;
+  --primary-fg-color: white;
+  --secondary-fg-color: #a4bfef;
+  --link-color: #0096ff;
+  --side-pattern-bg-color: #507a9d;
+  --card-background-color: #04090d;
+  --search-field-fg-color: var(--primary-fg-color);
+  --search-field-border-color: color-mod(#a4bfef alpha(50%));
+}
+
+:root {
+  @extend %base-theme;
+
+  @media (--light-mode) {
+    @extend %light-theme;
   }
+
+  @media (--dark-mode) {
+    @extend %dark-theme;
+  }
+}
+
+.light-theme {
+  @extend %light-theme;
+}
+
+.dark-theme {
+  @extend %dark-theme;
 }
 
 @custom-media --larger-than-max-width (width >= 70rem);
@@ -40,7 +64,6 @@
 @custom-media --compact-layout (width < 40rem);
 @custom-media --full-layout (width >= 40rem);
 @custom-media --ultra-compact-layout (width < 20rem);
-@custom-media --dark-mode (prefers-color-scheme: dark);
 
 @custom-media --card-one-column (width < 45em);
 @custom-media --card-two-columns (width < 65em);
