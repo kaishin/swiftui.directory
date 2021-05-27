@@ -6,7 +6,7 @@
   "author": "Reda Lemeden <hello@redalemeden.com>",
   "dependencies": {
     "autoprefixer": "^9.6.1",
-    "browserslist": "^4.6.3",
+    "browserslist": "^4.16.5",
     "feed": "^3.0.0",
     "gatsby": "^2.13.58",
     "gatsby-cli": "^2.7.30",
