@@ -1,4 +1,4 @@
-name: ' SwiftUI-Introspect'
+name: 'SwiftUI-Introspect'
 description: >-
   Introspect the underlying UIKit or AppKit views behind any SwiftUI view. Works
   with both UIKit and AppKit.

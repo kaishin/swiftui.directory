@@ -13,30 +13,15 @@ class Card extends React.Component {
     return (
       <li className="card" key={index}>
         <a href={item.url} className="card-link">
-          <div className={'icon-container ' + item.category.toLowerCase()}>
-            <span className="icon" />
-            <span className="icon-pattern" />
-            <span className="icon-pattern" />
-            <span className="icon-pattern" />
-          </div>
           <div className="content">
             <h3 className="title">
+              <img className={'icon ' + item.category.toLowerCase()} src={'/icons/' + item.category.toLowerCase() + '-icon.svg'} alt="Icon" />
               <Highlighter textToHighlight={item.name} searchWords={query.split()} />
             </h3>
-            <h4 className="author">
-              <img
-                className="avatar"
-                src={item.authorAvatar || item.author.avatar}
-                alt={item.authorName || item.author.name}
-              />
-
-              <span>
-                By <Highlighter textToHighlight={item.authorName || item.author.name} searchWords={query.split()} />
-              </span>
-            </h4>
-            <small className="description">
+            <p className="description">
               <Highlighter textToHighlight={item.description} searchWords={query.split()} />
-            </small>
+              {' '}By <strong><Highlighter textToHighlight={item.authorName || item.author.name} searchWords={query.split()} /></strong>
+            </p>
           </div>
         </a>
       </li>

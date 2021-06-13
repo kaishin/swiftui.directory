@@ -63,7 +63,7 @@ class IndexPage extends Component {
           <section className={'browse-container ' + (this.state.query.length > 2 ? 'hidden' : '')}>
             <div className="title-container">
               <span className="line" />
-              <h2 className="section-title">Recently Added</h2>
+              <h2 className="section-title">Package List</h2>
               <span className="line" />
             </div>
             <ol className="library-list">{libraries.map(({ node }, id) => <Card key={id} item={node} query="" />)}</ol>
@@ -122,7 +122,7 @@ export const query = graphql`
         title
       }
     }
-    allLibraries: allLibrariesYaml(sort: { fields: added, order: DESC }, limit: 18) {
+    allLibraries: allLibrariesYaml(sort: { fields: added, order: DESC }, limit: 1000) {
       edges {
         node {
           author {

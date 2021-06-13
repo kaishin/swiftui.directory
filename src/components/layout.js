@@ -70,8 +70,7 @@ const Layout = ({ children }) => (
             <p className="legal">
               This website doesn't store any personal information from visitors.{' '}
               <a href="https://www.okayanalytics.com">Okay Analytics</a> is used to collect basic, non-identifying data
-              such as visitor count and referrers.
-              <br /> <br />This website is not affiliated with Apple nor the Swift open-source project.
+              such as visitor count and referrers. This website is not affiliated with Apple nor the Swift open-source project.
             </p>
             <span className="copyright">
               <em>&copy;</em> {new Date().getFullYear()}{' '}

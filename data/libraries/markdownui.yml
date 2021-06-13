@@ -1,5 +1,5 @@
 name: MarkdownUI
-description: A cross-platform library for rendering Markdown (CommonMark ) in
+description: A cross-platform library for rendering Markdown (CommonMark) in
   SwiftUI using attributed strings.
 url: https://github.com/gonzalezreal/MarkdownUI
 author:

@@ -203,9 +203,9 @@ a {
   }
 
   & .search-input {
-    background: transparent;
-    border: 2px solid var(--search-field-border-color);
-    border-radius: 0.5rem;
+    background: var(--card-background-color);
+    border: 1px solid var(--search-field-border-color);
+    border-radius: 20rem;
     color: var(--search-field-fg-color);
     font-size: 1rem;
     letter-spacing: 0.05em;
@@ -216,7 +216,6 @@ a {
 
     &::placeholder {
       color: var(--secondary-fg-color);
-      font-size: 0.9rem;
       font-weight: 300;
     }
 
@@ -281,7 +280,7 @@ a {
 
 .site-footer {
   @extend %side-pattern;
-  color: var(--secondary-fg-color);
+  color: var(--primary-fg-color);
 
   &::before {
     opacity: 0.05;
@@ -293,9 +292,7 @@ a {
 
   & .legal {
     font-size: 0.75rem;
-    letter-spacing: 0.05em;
     line-height: 1.5;
     max-width: 40rem;
-    opacity: 0.5;
   }
 }
